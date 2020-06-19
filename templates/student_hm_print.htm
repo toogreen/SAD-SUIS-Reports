@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>SUIS Student Database - Student profile: {LASTNAME} {FIRSTNAME} {CHINESENAME}</title>
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+h1 {
+	font-size: 16px;
+}
+
+h2 {
+	font-size: 14px;
+}
+-->
+</style></head>
+
+<body>
+<h1>Personal Information</h1>
+  <br />
+
+  <table width="100%" border="0" cellspacing="1" cellpadding="4" align="center">
+    <tr>
+      <td width="26%" height="34">Family name english </td>
+      <td width="74%" height="34">{LASTNAME}      </td>
+    </tr>
+    <tr>
+      <td height="34">First / middle name </td>
+      <td height="34">{FIRSTNAME}
+        /{MIDDLENAME}      </td>
+    </tr>
+    <tr>
+      <td height="34">Name Chinese</td>
+      <td height="34">{CHINESENAME}      </td>
+    </tr>
+    <tr>
+      <td height="34">Preferred  Name</td>
+      <td height="34">{PREFNAMEDROP}</td>
+    </tr>
+    <tr>
+      <td height="34">Date of Birth </td>
+      <td height="34">{DOBDROP}</td>
+    </tr>
+    <tr>
+      <td height="34">Place of Birth </td>
+      <td height="34">{PLACEOFBIRTH}      </td>
+    </tr>
+    <tr>
+      <td height="34">Gender</td>
+      <td height="34">{SEXDROP}</td>
+    </tr>
+    <tr>
+      <td height="34">Nationality</td>
+      <td height="34">{NATIONALITY}      </td>
+    </tr>
+    <tr>
+      <td height="34">Passport number </td>
+      <td height="34">{PASSPORTNB}      </td>
+    </tr>
+    <tr>
+      <td height="34">Passport expires</td>
+      <td height="34">{PASSPORTEXP}</td>
+    </tr>
+    <tr>
+      <td height="34">Descent</td>
+      <td height="34">{DESCENTDROP}</td>
+    </tr>
+    <tr>
+      <td height="34">Present grade <br />
+      (at time of application) </td>
+      <td height="34">{CURRENTGRADE}      </td>
+    </tr>
+    <tr>
+      <td height="34">Expected length of stay</td>
+      <td height="34">{EXPLENGTHSTAY}      </td>
+    </tr>
+    <tr>
+      <td height="30">Picture </td>
+      <td height="30">&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="30">&nbsp;</td>
+      <td height="30">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td width="26%">&nbsp;</td>
+      <td>      </td>
+    </tr>
+</table>
+
+<h1>Details of Parents</h1>
+
+  <table width="100%" border="0" cellspacing="1" cellpadding="4" align="center">
+    <tr>
+      <td height="59">Legal  Custodian</td>
+      <td height="59">{LEGALCUSTODIAN}</td>
+    </tr>
+    <tr>
+      <td height="34" colspan="2"><h2>Father</h2></td>
+    </tr>
+    <tr> 
+      <td width="26%" height="34">Name</td>
+      <td width="74%" height="34">
+        {FATHERNAME}      </td>
+    </tr>
+    <tr>
+      <td height="34">Nationality</td>
+      <td height="34">
+        {FATHERNATIONALITY}      </td>
+    </tr>
+    <tr> 
+      <td height="34">Phone</td>
+      <td height="34">
+        {FATHERPHONE}      </td>
+    </tr>
+    <tr>
+      <td height="34">Mobile Phone </td>
+      <td height="34">{FATHERPHONEMOBILE}</td>
+    </tr>
+    <tr>
+      <td height="34">Email</td>
+      <td height="34">{FATHEREMAIL}</td>
+    </tr>
+    <tr>
+      <td height="34">Company Phone </td>
+      <td height="34">{FATHERPHONECOMPANY}</td>
+    </tr>
+    <tr> 
+      <td height="34">Company</td>
+      <td height="34">
+        {FATHERCOMPANY}      </td>
+    </tr>
+    <tr> 
+      <td height="34">Title / Position </td>
+      <td height="34">
+        {FATHERTITLE}      </td>
+    </tr>
+    <tr>
+      <td height="34" valign="top">Company Address </td>
+      <td height="34">
+        {FATHERCOMPANYADDRESS}      </td>
+    </tr>
+    <tr>
+      <td height="34" valign="top">Home Address </td>
+      <td height="34">{FATHERHOMEADDRESS}</td>
+    </tr>
+    <tr>
+      <td height="34" valign="top">English skills </td>
+      <td height="34">{FATHERLANGUAGEEN}</td>
+    </tr>
+    <tr>
+      <td height="34" valign="top">Chinese skills </td>
+      <td height="34">{FATHERLANGUAGECN}</td>
+    </tr>
+    <tr>
+      <td height="34" valign="top">Native language</td>
+      <td height="34">{FATHERNATIVE}</td>
+    </tr>
+    <tr>
+      <td height="10" colspan="2">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td height="34" colspan="2"><h2>Mother</h2></td>
+    </tr>
+    <tr> 
+      <td width="26%" height="34">Name</td>
+      <td width="74%" height="34">
+        {MOTHERNAME}      </td>
+    </tr>
+    <tr>
+      <td height="34">Nationality</td>
+      <td height="34">
+        {MOTHERNATIONALITY}      </td>
+    </tr>
+    <tr> 
+      <td height="34">Phone</td>
+      <td height="34">
+        {MOTHERPHONE}      </td>
+    </tr>
+    <tr>
+      <td height="34">Mobile Phone </td>
+      <td height="34">{MOTHERPHONEMOBILE}</td>
+    </tr>
+    <tr>
+      <td height="34">Email</td>
+      <td height="34">{MOTHEREMAIL}</td>
+    </tr>
+    <tr>
+      <td height="34">Company phone</td>
+      <td height="34">{MOTHERPHONECOMPANY}</td>
+    </tr>
+    <tr> 
+      <td height="34">Company</td>
+      <td height="34">
+        {MOTHERCOMPANY}      </td>
+    </tr>
+    <tr> 
+      <td height="34">Title / Position </td>
+      <td height="34">{MOTHERTITLE}</td>
+    </tr>
+    <tr>
+      <td height="34" valign="top">Company Address </td>
+      <td height="34">
+        {MOTHERCOMPANYADDRESS}      </td>
+    </tr>
+    <tr>
+      <td height="34" valign="top">Home Address </td>
+      <td height="34">{MOTHERHOMEADDRESS}</td>
+    </tr>
+    <tr>
+      <td height="34" valign="top">English skills </td>
+      <td height="34">{MOTHERLANGUAGEEN}</td>
+    </tr>
+    <tr>
+      <td height="34" valign="top">Chinese skills </td>
+      <td height="34">{MOTHERLANGUAGECN}</td>
+    </tr>
+    <tr>
+      <td height="34" valign="top">Native language</td>
+      <td height="34">{MOTHERNATIVE}</td>
+    </tr>
+    <tr>
+      <td height="10" colspan="2">&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="21" valign="top">Other comments </td>
+      <td height="21">{PARENTSOTHERS}</td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td width="26%" bgcolor="#FFFFFF">&nbsp;</td>
+      <td>	</td>
+    </tr>
+  </table>
+
+</body>
+</html>

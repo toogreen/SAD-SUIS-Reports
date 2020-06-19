@@ -1,0 +1,25 @@
+<div class="SectionHeader">
+     <h1><img src="img/txt_newsletter.gif" width="300" height="60" /> </h1>
+</div>
+<form action="newsletter.php" method="post" style="margin-right:20px;">
+	
+  <div id="basic_form"> <font size="2" face="Verdana, Arial, Helvetica, sans-serif"><br>
+          <br>
+    Choose a list: 
+	{LISTS}<br />
+      <br />
+    Subject line <br>
+    <input name="newsletter_subject" type="text" id="newsletter_subject" style="width: 500px;" value="{SUBJECT}">
+    <br /><br />
+    Sender email address <br>
+    <input name="newsletter_fromemail" type="text" id="newsletter_fromemail" style="width: 500px;" value="{SENDERADDRESS}">
+    <br>
+    <br>
+    Newsletter Text (no html) <br>
+    <textarea name="newsletter_txt" rows="30" id="newsletter_txt" style="width: 500px;">{TXT}</textarea>
+    <br><br />
+    <input name="newsletter_id" type="hidden" id="newsletter_id" value="{NEWSLETTERID}">
+    <input name="createpreview" type="submit" value="next step &gt;&gt; show preview">
+    </font></div>
+	</form>
+	    <br><br />

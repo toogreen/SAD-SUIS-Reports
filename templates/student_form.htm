@@ -1,0 +1,409 @@
+<div class="SectionHeader">
+     <h1><img src="img/icon_personal.gif" /></h1>
+</div>
+<form name="myForm" method="post" action="" id="basic_form" Enctype="multipart/form-data">
+  <br />
+  <table width="100%" border="0" cellspacing="1" cellpadding="4" align="center">
+    <tr bgcolor="#FAFAFA"> 
+      <td width="31%" height="34">Family name english </td>
+      <td width="69%" height="34">
+        <input name="lastname" type="text" id="lastname" value="{LASTNAME}" style="width:340px;" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34">First name / middle name </td>
+      <td height="34">
+        <input name="firstname" type="text" id="firstname" style="width:162px;" value="{FIRSTNAME}" /> 
+        / 
+        <input name="middlename" type="text" id="middlename" style="width:162px;" value="{MIDDLENAME}" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Name Chinese</td>
+      <td height="34">
+        <input name="chinesename" type="text" id="chinesename" value="{CHINESENAME}" style="width:340px;" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Preferred  Name</td>
+      <td height="34"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">{PREFNAMEDROP}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Date of Birth </td>
+      <td height="34" bgcolor="#FAFAFA">{DOBDROP}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34">Place of Birth </td>
+      <td height="34">
+        <input name="placeofbirth" type="text" id="placeofbirth" value="{PLACEOFBIRTH}" style="width:340px;" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Gender</td>
+      <td height="34">{SEXDROP}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Nationality</td>
+      <td height="34">
+        <input name="nationality" type="text" id="nationality" value="{NATIONALITY}" style="width:340px;" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Passport number </td>
+      <td height="34">
+        <input name="passport_nb" type="text" id="passport_nb" value="{PASSPORTNB}" style="width:340px;" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34">Passport expires (yyyy/mm) </td>
+      <td height="34">
+        <input name="passport_exp" type="text" id="passport_exp" value="{PASSPORTEXP}" style="width:340px;" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34">Descent</td>
+      <td height="34">{DESCENTDROP}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34">Present grade <br />
+      (at time of application) </td>
+      <td height="34">
+        <input name="currentgrade" type="text" id="currentgrade" value="{CURRENTGRADE}" style="width:340px;" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34">Expected length stay in Shanghai</td>
+      <td height="34">
+        <input name="exp_length_stay" type="text" id="exp_length_stay" value="{EXPLENGTHSTAY}" style="width:340px;" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">Picture </td>
+      <td height="30">
+        <input name="picture" type="file" id="picture" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">&nbsp;</td>
+      <td height="30">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td width="31%" bgcolor="#FFFFFF">  
+        </td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+ 
+<div class="SectionHeader">
+     <h1><img src="img/icon_education.gif" /></h1>
+</div><br />
+  <table width="100%" border="0" cellspacing="1" cellpadding="4" align="center">
+    <tr bgcolor="#FAFAFA"> 
+      <td height="26" colspan="2">Has  the student ever <strong>skipped a grade/been promoted?</strong> (leave blank if not) </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="120" colspan="2" valign="top">
+        <textarea name="skippedgrade" rows="4" id="skippedgrade" style="width:560px;">{SKIPPEDGRADE}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="25" colspan="2">Has  the student ever <strong>repeated a grade?</strong> (leave blank if not) </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="120" colspan="2" valign="top">
+        <textarea name="repeatedgrade" rows="4" id="repeatedgrade" style="width:560px;">{REPEATEDGRADE}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="25" colspan="2">Has  the student been <strong>suspended or expelled</strong> from any previous schools?&nbsp;&nbsp; </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="120" colspan="2" valign="top">
+        <textarea name="suspended" rows="4" id="suspended" style="width:560px;">{SUSPENDED}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="25" colspan="2">Has  the student <strong>exhibited behavior problems</strong> at home or in a school setting? </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="120" colspan="2" valign="top">
+        <textarea name="behaviorproblems" rows="4" id="behaviorproblems" style="width:560px;">{BEHAVIORPROBLEMS}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="25" colspan="2">Has  the student <strong>participated in behavioral management</strong>, counseling, or family  therapy?&nbsp; </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="120" colspan="2" valign="top">
+        <textarea name="behaviormanagement" rows="4" id="behaviormanagement" style="width:560px;">{BEHAVIORMANAGEMENT}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="25" colspan="2"><p>Has the  student ever had any<strong> individualized testing such as SAP, intelligence test,  TOEFL</strong> etc? If yes, p-lease specify and  enclose test results</p>      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="120" colspan="2" valign="top">
+        <textarea name="indi_testing" rows="4" id="indi_testing" style="width:560px;">{INDITESTING}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" colspan="2"><p>Please  provide for the above or any other factors that the school should be aware of  that might affect the success of your child&hellip; </p></td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" colspan="2">
+        <textarea name="background_others" rows="4" id="background_others" style="width:560px;">{BACKGROUNDOTHERS}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" colspan="2">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">&nbsp;</td>
+      <td width="69%" height="30">&nbsp;</td>
+    </tr>
+  </table>
+<div class="SectionHeader">
+     <h1><img src="img/icon_emergency.gif" /> </h1>
+</div>
+  <br />
+  <table width="100%" border="0" cellspacing="1" cellpadding="4" align="center">
+    <tr bgcolor="#FAFAFA">
+      <td height="34" colspan="2"><strong>Contact Person 1 </strong></td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td width="31%" height="34">Name</td>
+      <td width="69%" height="34">
+        <input name="emgc_contact" type="text" id="emgc_contact" value="{EMGCCONTACT}" style="width:340px;" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34">Relationship</td>
+      <td height="34">
+        <input name="emgc_relationship" type="text" id="emgc_relationship" value="{EMGCRELATIONSHIP}" style="width:340px;" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Phone</td>
+      <td height="34">
+        <input name="emgc_phone" type="text" id="emgc_phone" value="{EMGCPHONE}" style="width:340px;" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Mobile</td>
+      <td height="34">
+        <input name="emgc_mobile" type="text" id="emgc_mobile" value="{EMGCMOBILE}" style="width:340px;" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Office</td>
+      <td height="34" bgcolor="#FAFAFA">
+        <input name="emgc_office" type="text" id="emgc_office" value="{EMGCOFFICE}" style="width:340px;" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34">Email</td>
+      <td height="34">
+        <input name="emgc_email" type="text" id="emgc_email" value="{EMGCEMAIL}" style="width:340px;" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34" colspan="2"><strong>Contact Person 2 </strong></td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Name</td>
+      <td height="34">
+        <input name="emgc2_contact" type="text" id="emgc2_contact" value="{EMGC2CONTACT}" style="width:340px;" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Relationship</td>
+      <td height="34">
+        <input name="emgc2_relationship" type="text" id="emgc2_relationship" value="{EMGC2RELATIONSHIP}" style="width:340px;" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34">Phone</td>
+      <td height="34">
+        <input name="emgc2_phone" type="text" id="emgc2_phone" value="{EMGC2PHONE}" style="width:340px;" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34">Mobile</td>
+      <td height="34">
+        <input name="emgc2_mobile" type="text" id="emgc2_mobile" value="{EMGC2MOBILE}" style="width:340px;" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34">Office</td>
+      <td height="34">
+        <input name="emgc2_office" type="text" id="emgc2_office" value="{EMGC2OFFICE}" style="width:340px;" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34">Email</td>
+      <td height="34">
+        <input name="emgc2_email" type="text" id="emgc2_email" value="{EMGC2EMAIL}" style="width:340px;" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">&nbsp;</td>
+      <td height="30">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td width="31%" bgcolor="#FFFFFF">  
+        </td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+<div class="SectionHeader">
+     <h1><img src="img/icon_medical.gif" /></h1>
+</div>
+  <br />
+  <table width="100%" border="0" cellspacing="1" cellpadding="4" align="center">
+    
+    <tr bgcolor="#FAFAFA"> 
+      <td width="31%" height="34" valign="top">Has received  the following childhood immunizations</td>
+      <td width="69%" height="34">{IMMUNIZATIONS}&nbsp;
+        
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" valign="top">Has any of the following</td>
+      <td height="34"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">{DISEASES}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34" colspan="2">Take any medicines regularly</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" colspan="2">
+        <textarea name="medicine" rows="4" id="medicine" style="width:560px;">{PHYSICALACTIVITY}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Contact lenses or glasses&nbsp;&nbsp; </td>
+      <td height="34"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">{CONTACTLENSES}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34" colspan="2">Does   have any limitations on physical activity</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" colspan="2">
+        <textarea name="physicalactivity" rows="4" id="physicalactivity" style="width:560px;">{PHYSICALACTIVITY}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" valign="top"><p align="left">Has been tested <br />
+        or recommended  for </p></td>
+      <td height="34">{MEDICALOTHERS}</td>
+    </tr>
+    
+    <tr bgcolor="#FAFAFA">
+      <td height="30">&nbsp;</td>
+      <td height="30">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td width="31%" bgcolor="#FFFFFF">  
+        </td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+<div class="SectionHeader">
+     <h1><img src="img/icon_language.gif" /></h1>
+</div>
+  <br />
+  <table width="100%" border="0" cellspacing="1" cellpadding="4" align="center">
+    
+    <tr bgcolor="#FAFAFA"> 
+      <td width="29%" height="34" valign="top">Native language </td>
+      <td width="71%" height="34">
+        <input name="lang_native" type="text" id="lang_native" value="{LANGNATIVE}" style="width:340px;" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" valign="top">Second language </td>
+      <td height="34">
+        <input name="lang_second" type="text" id="lang_second" value="{LANGSECOND}" style="width:340px;" />
+      </td>
+    </tr>
+    
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34" colspan="2" valign="bottom">Other languages spoken </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" colspan="2">
+        <textarea name="lang_others" rows="4" id="lang_others" style="width:560px;">{LANGOTHERS}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Is english used at home </td>
+      <td height="34"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">{LANGENGLISHHOMEDROP}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34">Enrolled in full time English speaking school </td>
+      <td height="34">
+        <input name="lang_englishfulltime" type="text" id="lang_englishfulltime" value="{LANGENGLISHFULLTIME}" style="width:200px;" />
+      years</td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">How many years english instruction </td>
+      <td height="34">
+        <input name="lang_english_years" type="text" id="lang_english_years" value="{LANGENGLISHYEARS}" style="width:200px;" />
+      years</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" colspan="2" valign="bottom">Has a private tutor </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" colspan="2">
+        <textarea name="private_tutoring" rows="4" id="private_tutoring" style="width:560px;">{PRIVATETUTORING}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" colspan="2">Has  studied English at ... </td>
+    </tr>
+    
+    <tr bgcolor="#FAFAFA">
+      <td height="30" align="right">Private  Tutor </td>
+      <td height="30">
+        <input name="lang_english_private_tutor" type="text" id="lang_english_private_tutor" value="{LANGENGLISHPRIVATETUTOR}" style="width:200px;" />
+      month/ years</td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td width="29%" align="right" bgcolor="#FFFFFF">Home</td>
+      <td>
+        <input name="lang_english_private_home" type="text" id="lang_english_private" value="{LANGENGLISHPRIVATEHOME}" style="width:200px;" />
+       month/ years</td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td align="right" bgcolor="#FFFFFF">Name  of School</td>
+      <td>
+        <input name="lang_english_private_school" type="text" id="lang_english_private_school" value="{LANGENGLISHPRIVATEHOME}" style="width:200px;" />
+       month/ years</td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td height="45" colspan="2" valign="bottom" bgcolor="#FFFFFF">Has attended summer school program </td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td colspan="2" bgcolor="#FFFFFF">
+        <textarea name="summerschool" rows="4" id="summerschool" style="width:560px;">{SUMMERSCHOOL}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td height="30" colspan="2" valign="bottom" bgcolor="#FFFFFF">Outside  school commitments? (e.g. music, sports, etc)</td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td colspan="2" bgcolor="#FFFFFF">
+        <textarea name="outsideschool" rows="4" id="outsideschool" style="width:560px;">{OUTSIDESCHOOL}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td colspan="2" bgcolor="#FFFFFF"><br />
+      <br />
+      <label>
+      <input name="stud_id" type="hidden" id="stud_id" value="{STUDID}" />
+      <input name="submit" type="submit" id="submit" value="submit" />
+      </label>
+      <br /></td>
+    </tr>
+  </table>
+</form>

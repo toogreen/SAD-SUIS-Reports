@@ -1,0 +1,67 @@
+body {
+scrollbar-arrow-color: white;
+scrollbar-base-color: white;
+scrollbar-dark-shadow-color: silver;
+scrollbar-track-color: white;
+scrollbar-face-color: silver;
+scrollbar-shadow-color: silver;
+scrollbar-highlight-color: silver;
+scrollbar-3d-light-color: silver;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+color: #000000;
+}
+
+a:link           { text-decoration: underline; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #362919;}
+a:visited        { text-decoration: underline; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #362919;}
+a:active         { text-decoration: underline; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #362919;}
+a:hover          { text-decoration: underline; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #362919; font-weight: bold;}
+
+a.small:link           { text-decoration: underline; font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #362919;}
+a.small:visited        { text-decoration: underline; font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #362919;}
+a.small:active         { text-decoration: underline; font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #362919;}
+a.small:hover          { text-decoration: underline; font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #362919;}
+
+a.stitres:link           { text-decoration: none; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF;}
+a.stitres:visited        { text-decoration: none; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF;}
+a.stitres:active         { text-decoration: none; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF;}
+a.stitres:hover          { text-decoration: none;  font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #FFFFFF;}
+
+
+td {
+font-family: TrebuchetMS, Verdana, Arial, Helvetica,sans-serif;
+font-size: 12px;
+color: #000000;
+}
+
+.title {
+font-family: TrebuchetMS, Verdana, Arial, Helvetica, sans-serif;
+font-size: 12px;
+color: #000000;
+font-weight: bold;
+}
+
+.blog {
+font-family: TrebuchetMS, Verdana, Arial, Helvetica, sans-serif;
+font-size: 12px;
+color: #000000;
+}
+
+.blog_comment {
+font-family: TrebuchetMS, Verdana, Arial, Helvetica, sans-serif;
+font-size: 9px;
+color: #000000;
+}
+
+.comment {
+font-family: TrebuchetMS, Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+color: #000000;
+!font-weight: bold;
+}
+.stitres {
+font-family: TrebuchetMS, Verdana, Arial, Helvetica, sans-serif;
+font-size: 14px;
+color: #FFFFFF;
+!font-weight: bold;
+}

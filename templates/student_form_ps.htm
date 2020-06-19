@@ -1,0 +1,108 @@
+<style type="text/css">
+<!--
+.Stil1 {font-size: 10px}
+-->
+</style>
+<form name="myForm" method="post" action="" id="basic_form" Enctype="multipart/form-data">
+  <div class='redbox'>
+  {ADMINMSG}
+  </div>
+<div class="SectionHeader">
+     <h1><img src="img/icon_personal.gif" /></h1>
+</div>
+
+  <br />
+  <table width="100%" border="0" cellspacing="1" cellpadding="4" align="center">
+    <tr bgcolor="#FAFAFA">
+      <td height="42">Status<br />
+      <br /></td>
+      <td height="42">{STATUSDROP}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="5" colspan="2">{PREINT}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="50">Enrollment date</td>
+      <td height="50">{ENROLLED}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td width="31%" height="34">Family name english </td>
+      <td width="69%" height="34">
+        <input name="lastname" type="text" id="lastname" value="{LASTNAME}" style="width:340px;" />      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34">First name / middle name </td>
+      <td height="34">
+        <input name="firstname" type="text" id="firstname" style="width:162px;" value="{FIRSTNAME}" /> 
+        / 
+        <input name="middlename" type="text" id="middlename" style="width:162px;" value="{MIDDLENAME}" />      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Name Chinese</td>
+      <td height="34">
+        <input name="chinesename" type="text" id="chinesename" value="{CHINESENAME}" style="width:340px;" />      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Preferred  Name</td>
+      <td height="34">{PREFNAMEDROP}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Date of Birth </td>
+      <td height="34" bgcolor="#FAFAFA">{DOBDROP}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34">Place of Birth </td>
+      <td height="34">
+        <input name="placeofbirth" type="text" id="placeofbirth" value="{PLACEOFBIRTH}" style="width:340px;" />      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Gender</td>
+      <td height="34">{SEXDROP}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Nationality</td>
+      <td height="34">
+        {NATIONALITY}      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Passport number </td>
+      <td height="34">
+        <input name="passport_nb" type="text" id="passport_nb" value="{PASSPORTNB}" style="width:340px;" />      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34">Passport expires (yyyy/mm) </td>
+      <td height="34">
+        <input name="passport_exp" type="text" id="passport_exp" value="{PASSPORTEXP}" style="width:340px;" />      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34">Descent</td>
+      <td height="34">{DESCENTDROP}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34">Present grade <br />
+      (at time of application) </td>
+      <td height="34">
+        <input name="currentgrade" type="text" id="currentgrade" value="{CURRENTGRADE}" style="width:340px;" />      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34">Expected length stay in Shanghai</td>
+      <td height="34">
+        <input name="exp_length_stay" type="text" id="exp_length_stay" value="{EXPLENGTHSTAY}" style="width:340px;" />      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">Picture </td>
+      <td height="30">
+        <input name="picture" type="file" id="picture" />      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">&nbsp;</td>
+      <td height="30">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td width="31%" bgcolor="#FFFFFF"></td>
+      <td>
+	  <input name="stud_id" type="hidden" id="stud_id" value="{STUDID}" />
+      <input name="submit" type="submit" id="submit" value="submit" />	  </td>
+    </tr>
+  </table>
+</form>

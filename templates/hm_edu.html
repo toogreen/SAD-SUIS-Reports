@@ -1,0 +1,71 @@
+<div class="SectionHeader">
+     <img src="img/icon_education.gif" /><a href="javascript:toggleLayer('student-edu');" title="Show Personal details"><img src="img/icon_showhide.gif" width="160" height="60" border="0" /></a><a href="student-edu.php?stud_id={STUDID}"><img src="img/icon_edit.gif" width="61" height="60" border="0" /></a>
+</div><br />
+<div id="student-edu">
+{SCHOOLS}
+  <table width="100%" border="0" cellspacing="1" cellpadding="4" align="center">
+    <tr bgcolor="#FAFAFA"> 
+      <td height="26" colspan="2">Has  the student ever <strong>skipped a grade/been promoted?</strong> (leave blank if not) </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="120" colspan="2" valign="top">
+        <textarea name="skippedgrade" rows="4" id="skippedgrade" style="width:560px; border: 1px solid #e9e8e7;">{SKIPPEDGRADE}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="25" colspan="2">Has  the student ever <strong>repeated a grade?</strong> (leave blank if not) </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="120" colspan="2" valign="top">
+        <textarea name="repeatedgrade" rows="4" id="repeatedgrade" style="width:560px; border: 1px solid #e9e8e7;">{REPEATEDGRADE}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="25" colspan="2">Has  the student been <strong>suspended or expelled</strong> from any previous schools?&nbsp;&nbsp; </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="120" colspan="2" valign="top">
+        <textarea name="suspended" rows="4" id="suspended" style="width:560px; border: 1px solid #e9e8e7;">{SUSPENDED}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="25" colspan="2">Has  the student <strong>exhibited behavior problems</strong> at home or in a school setting? </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="120" colspan="2" valign="top">
+        <textarea name="behaviorproblems" rows="4" id="behaviorproblems" style="width:560px; border: 1px solid #e9e8e7;">{BEHAVIORPROBLEMS}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="25" colspan="2">Has  the student <strong>participated in behavioral management</strong>, counseling, or family  therapy?&nbsp; </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="120" colspan="2" valign="top">
+        <textarea name="behaviormanagement" rows="4" id="behaviormanagement" style="width:560px; border: 1px solid #e9e8e7;">{BEHAVIORMANAGEMENT}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="25" colspan="2"><p>Has the  student ever had any<strong> individualized testing such as SAP, intelligence test,  TOEFL</strong> etc? If yes, p-lease specify and  enclose test results</p>      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="120" colspan="2" valign="top">
+        <textarea name="indi_testing" rows="4" id="indi_testing" style="width:560px; border: 1px solid #e9e8e7;">{INDITESTING}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" colspan="2"><p>Please  provide for the above or any other factors that the school should be aware of  that might affect the success of your child&hellip; </p></td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" colspan="2">
+        <textarea name="background_others" rows="4" id="background_others" style="width:560px; border: 1px solid #e9e8e7;">{BACKGROUNDOTHERS}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" colspan="2">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">&nbsp;</td>
+      <td width="69%" height="30">&nbsp;</td>
+    </tr>
+  </table>
+ </div>

@@ -1,0 +1,58 @@
+<form name="myForm" method="post" action="" id="basic_form" Enctype="multipart/form-data">
+  <div class='redbox'>
+  {ADMINMSG}
+  </div>
+<div class="SectionHeader">
+     <h1><img src="img/icon_medical.gif" /></h1>
+</div>
+  <br />
+  <table width="100%" border="0" cellspacing="1" cellpadding="4" align="center">
+    
+    <tr bgcolor="#FAFAFA"> 
+      <td width="31%" height="34" valign="top">Has received  the following childhood immunizations</td>
+      <td width="69%" height="34">{IMMUNIZATIONS}&nbsp;
+        
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" valign="top">Has any of the following</td>
+      <td height="34"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">{DISEASES}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34" colspan="2" valign="bottom">Takes any medicines regularly</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" colspan="2">
+        <textarea name="medicine" rows="4" id="medicine" style="width:500px;">{MEDICINE}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Contact lenses or glasses&nbsp;&nbsp; </td>
+      <td height="34"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">{CONTACTLENSES}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34" colspan="2" valign="bottom">Does have any limitations on physical activity or any other medical conditions?</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" colspan="2">
+        <textarea name="physicalactivity" rows="4" id="physicalactivity" style="width:500px;">{PHYSICALACTIVITY}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" valign="top"><p align="left">Has been tested <br />
+        or recommended  for </p></td>
+      <td height="34">{MEDICALOTHERS}</td>
+    </tr>
+    
+    <tr bgcolor="#FAFAFA">
+      <td height="30">&nbsp;</td>
+      <td height="30">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td width="31%" bgcolor="#FFFFFF">  
+        </td>
+      <td>	  <input name="stud_id" type="hidden" id="stud_id" value="{STUDID}" />
+      <input name="submit" type="submit" id="submit" value="submit" /></td>
+    </tr>
+  </table>
+</form>

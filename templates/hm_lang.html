@@ -1,0 +1,136 @@
+<div class="SectionHeader">
+     <img src="img/icon_language.gif" /><a href="javascript:toggleLayer('student-lang');" title="Show Personal details"><img src="img/icon_showhide.gif" width="160" height="60" border="0" /></a><a href="student-lang.php?stud_id={STUDID}"><img src="img/icon_edit.gif" width="61" height="60" border="0" /></a>
+</div>
+  <br />
+  <div id="student-lang">
+  <table width="100%" border="0" cellspacing="1" cellpadding="4" align="center">
+    
+    <tr bgcolor="#FAFAFA"> 
+      <td width="29%" height="34" valign="top">Native language </td>
+      <td width="71%" height="34">
+        <input name="lang_native" type="text" id="lang_native" value="{LANGNATIVE}" style="width:340px;" />
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" valign="top">Second language </td>
+      <td height="34">
+        <input name="lang_second" type="text" id="lang_second" value="{LANGSECOND}" style="width:340px;" />
+      </td>
+    </tr>
+    
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34" colspan="2" valign="bottom">Other languages spoken </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" colspan="2">
+        <textarea name="lang_others" rows="4" id="lang_others" style="width:560px;">{LANGOTHERS}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Is english used at home </td>
+      <td height="34">{LANGENGLISHHOMEDROP}</td>
+    </tr>
+<!-- ADDED THIS FOR ENGLISH LEVEL -->
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">English Level </td>
+      <td height="34">{LANGENGLISHLEVELDROP}</td>
+    </tr>
+<!-- ADDED THIS FOR CHINESE LEVEL -->
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Chinese Level </td>
+      <td height="34">{LANGCHINESELEVELDROP}</td>
+    </tr>   
+<!-- ADDED THIS FOR MATHS LEVEL -->
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Maths Level </td>
+      <td height="34">{LANGMATHSLEVELDROP}</td>
+    </tr>   
+    
+<!-- ADDED THIS FOR ORT LEVEL -->
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Oxford Reading Tree Level </td>
+      <td height="34">{LANGORTLEVELDROP}</td>
+    </tr>   
+    
+    <tr bgcolor="#FAFAFA">
+      <td height="34">Enrolled in full time English speaking school </td>
+      <td height="34">
+        <input name="lang_englishfulltime" type="text" id="lang_englishfulltime" value="{LANGENGLISHFULLTIME}" style="width:200px;" />
+      years</td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">How many years english instruction </td>
+      <td height="34">
+        <input name="lang_english_years" type="text" id="lang_english_years" value="{LANGENGLISHYEARS}" style="width:200px;" />
+      years</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" colspan="2" valign="bottom">Has a private tutor </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" colspan="2">
+        <textarea name="private_tutoring" rows="4" id="private_tutoring" style="width:560px;">{PRIVATETUTORING}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" colspan="2">Has  studied English at ... </td>
+    </tr>
+    
+    <tr bgcolor="#FAFAFA">
+      <td height="30" align="right">Private  Tutor </td>
+      <td height="30">
+        <input name="lang_english_private_tutor" type="text" id="lang_english_private_tutor" value="{LANGENGLISHPRIVATETUTOR}" style="width:200px;" />
+      month/ years</td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td width="29%" align="right" bgcolor="#FFFFFF">Home</td>
+      <td>
+        <input name="lang_english_private_home" type="text" id="lang_english_private" value="{LANGENGLISHPRIVATEHOME}" style="width:200px;" />
+       month/ years</td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td align="right" bgcolor="#FFFFFF">Name  of School</td>
+      <td>
+        <input name="lang_english_private_school" type="text" id="lang_english_private_school" value="{LANGENGLISHPRIVATEHOME}" style="width:200px;" />
+       month/ years</td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td height="45" colspan="2" valign="bottom" bgcolor="#FFFFFF">Has attended summer school program </td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td colspan="2" bgcolor="#FFFFFF">
+        <textarea name="summerschool" rows="4" id="summerschool" style="width:560px;">{SUMMERSCHOOL}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td height="30" colspan="2" valign="bottom" bgcolor="#FFFFFF">Outside  school commitments? (e.g. music, sports, etc):</td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td colspan="2" bgcolor="#FFFFFF">
+        <textarea name="outsideschool" rows="4" id="outsideschool" style="width:560px;">{OUTSIDESCHOOL}</textarea>
+      </td>
+    </tr>
+    <!-- ADDED THIS IN JUNE 2010 FOR SPECIAL NEEDS AND EAL DETAILS -->
+     <tr bgcolor="#FFFFFF">
+      <td height="30" colspan="2" valign="bottom" bgcolor="#FFFFFF">Special Educational Needs:</td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td colspan="2" bgcolor="#FFFFFF">
+        <textarea name="lang_specialneeds" rows="4" id="specialneeds" style="width:560px;">{LANGSPECIALNEEDS}</textarea>
+      </td>
+    </tr>
+         <tr bgcolor="#FFFFFF">
+      <td height="30" colspan="2" valign="bottom" bgcolor="#FFFFFF">EAL (Please specify: EAL, EFL, CAL, CFL and other details)</td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td colspan="2" bgcolor="#FFFFFF">
+        <textarea name="lang_eal" rows="4" id="lang_eal" style="width:560px;">{LANGEAL}</textarea>
+      </td>
+    </tr>
+    <!-- END OF JUNE 2O10 ADDITION -->
+    <tr bgcolor="#FFFFFF">
+      <td colspan="2" bgcolor="#FFFFFF"><br />
+      <br /></td>
+    </tr>
+  </table>
+  </div>

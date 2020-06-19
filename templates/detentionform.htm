@@ -1,0 +1,39 @@
+  <div class='schoolbox'>
+ <form name="adddetention" method="get" action="comment_edit.php" id="basic_form" style="border:0px">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td height="70" colspan="2" valign="top"><img src="img/txt_adddetention.gif" width="300" height="60" /></td>
+      </tr>
+        <td width="29%" height="28">Student Name </td>
+          <td width="71%" height="28">{STUDNAME}</td>
+  </tr>
+  <tr>
+    <td height="28">Class </td>
+    <td height="28">{CLASSNAME}</td>
+  </tr>
+  <tr>
+    <td height="28">Enrolled</td>
+    <td height="28">{ENROLLED}</td>
+  </tr>
+  <tr>
+    <td height="28">Comments</td>
+    <td height="28">{NBDETENTIONS}</td>
+  </tr>
+  <tr>
+    <td height="34" colspan="2">Text</td>
+    </tr>
+  <tr>
+    <td height="34" colspan="2"><label>
+      <textarea name="dettxt" rows="14" style="width: 480px">{DETTXT}</textarea>
+    </label></td>
+    </tr>
+  <tr>
+    <td height="50" colspan="2" align="center"><label>
+      <input name="det_id" type="hidden" id="det_id" value="{DETID}" />
+      <input name="stud_id" type="hidden" id="stud_id" value="{STUDID}" />
+      <input name="submit" type="submit" id="submit" value="Input" />
+    </label></td>
+  </tr>
+</table>
+</form>
+</div>

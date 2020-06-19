@@ -1,0 +1,884 @@
+/*-------------------------------------------------
+PAGE BODY
+-------------------------------------------------*/
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background-color: #f0f0f0;
+	text-align: center;
+}
+
+/* Make sure the table cells show the right font */
+td { font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif;
+	font-size: 12px; }
+
+.small {
+	font-size: 9px;
+	color: #333333;
+}
+
+
+
+/*-------------------------------------------------
+GLOBALS & GENERAL CASES
+-------------------------------------------------*/
+
+input { padding: 3px; }
+
+a {text-decoration: none; padding: 1px; }
+a:link { color: #03c; }
+a:visited { color: #03c; }
+a:hover { color: #333; background-color: #ad56a4; text-decoration: none; }
+
+
+a.image:link, a.image:visited, a.image:hover {
+	background: none;
+	padding: 0;
+	text-decoration: none;
+}
+
+a.image img {
+	border: none;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+
+h1 {
+	font-family: "Lucida Grande", arial, sans-serif;
+	padding: 0;
+	border-bottom: 0;
+	margin: 0;
+	color: #333;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+h2 {
+	font-family: "Lucida Grande", arial, sans-serif;
+	margin: 20px 0 5px 0px;
+	color: #333;
+	font-size: 14px;
+	padding: 0;
+}
+
+h3 {
+	margin: 0px 0 0 0;
+	color: #666;
+	font-family: "Lucida Grande", arial, sans-serif;
+	font-size: 14px;
+	padding: 0;
+}
+
+
+/*-------------------------------------------------
+LOGIN SCREEN (.login is body class)
+-------------------------------------------------*/
+
+.login div.Container {
+	width: 500px;
+	margin: 60px auto 20px auto;
+	min-width: inherit;
+}
+
+.login h1 {
+	margin-bottom: 20px;
+}
+
+
+.login dl {
+	margin: 10px 0 0 0;
+}
+
+.login p {
+	margin: 10px 0 0 0;
+}
+
+.login dt {
+	float: left;
+	width: 80px;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.login dd {
+	margin: 0 0 5px 90px;
+	font-size: 11px;
+	line-height: 24px;
+	color: #666;
+	margin-left: 80px;
+}
+
+.login input {
+	font-size: 14px;
+}
+
+.login dd span {
+	color: #ccc;
+}
+
+.login input#username {
+	width: 300px;
+}
+
+.login input#password {
+	width: 150px;
+	margin-right: 5px;
+}
+
+.login input#emailpassword {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.login div.AlertGood,
+.login div.AlertBad {
+	margin: 10px 0 20px 0;
+}
+
+.login div#Dialog {
+	border: 10px solid #ccc;
+	padding: 15px 20px 10px 20px;
+	text-align: left;
+	background: #fff;
+}
+
+
+/*-------------------------------------------------
+STRUCTURE
+-------------------------------------------------*/
+
+.Container {
+	margin: 0 auto;
+	text-align: center;
+	width: 950px;
+	min-width: 750px;
+	}
+
+.ClearAll {
+	padding: 0px;
+	clear: both;
+	font-size: 0px;
+	}
+
+#ContentFrame {
+	margin: 0;
+	padding: 0px 0px;
+	width: 100%;
+	text-align: left;
+	/*position: relative;*/
+	float: left;
+	border: 1px solid #ccc;
+	border-top: none;
+	background-color: #fff;
+}
+
+.Left {
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	width: 65%;
+	float: left;
+	}
+
+
+.Right {
+	padding: 0;
+	margin: 10px 0 0 0px;
+	text-align: left;
+	width: 35%;
+	/*position: absolute;*/
+	float: right;
+	}
+	
+
+
+/*-------------------------------------------------
+NEW FOR PROPORTIONAL WIDTH VERSION 
+-------------------------------------------------*/
+
+.col {
+	padding: 0 0px;
+	text-align: left;
+}
+
+.Left .col {
+	padding: 20 0px 0 20px;
+	float: left;
+}
+
+.Right .col {
+	border-left: 1px solid #dcdcdc;
+	padding: 20px 0 0 15px;
+	min-height: 800px;
+}
+
+
+	
+/*-------------------------------------------------
+HEADER
+-------------------------------------------------*/
+
+#Header {
+	width: 100%;
+	background: #C3DF19;
+	border: 1px solid #ccc;
+	border-bottom: none;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	}	
+
+#Header h1 /* client name */ {
+	padding: 0;
+	margin: 15px 20 10 20px;
+	font-size: 22px;
+	font-weight: normal;
+	color: #fc0;
+	text-align: left;
+	}	
+
+#Header h2 /* project name */ {
+	padding: 0 0 7px 0;
+	margin: 0 0 0 20px;
+	font-size: 16px;
+	font-weight: normal;
+	color: #fff;
+	border: none;
+	font-family: "Lucida Grande", arial, sans-serif;
+	}	
+
+
+#fresh_all h2 {
+	padding: 0 0 2px 0;
+	margin: 0;
+	border-bottom: 1px dotted #ccc;
+}
+
+
+/*-------------------------------------------------
+Ride site navigation
+-------------------------------------------------*/
+
+
+#listings_inside {
+	FONT-SIZE: 11px; PADDING-RIGHT: 0px;
+}
+#listings_inside UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN-TOP: 10px; LINE-HEIGHT: 19px; PADDING-TOP: 0px
+}
+#listings_inside LI {
+	MARGIN: 0px; BORDER-BOTTOM: #EEEEEE 1px solid; LIST-STYLE-TYPE: none; WIDTH: 240px;
+}
+#listings_inside A {
+	DISPLAY: block; PADDING-LEFT: 11px; BACKGROUND: #FFFFFF; WIDTH: 240px; COLOR: #595951; TEXT-DECORATION: none
+}
+#listings_inside A:hover {
+	BACKGROUND: #c3d3e2; COLOR: #fff
+}
+
+
+/*-------------------------------------------------
+STATUS BAR
+-------------------------------------------------*/
+
+#Statusbar, #Statusbar TD {
+	color: #666;
+	padding: 0 0px;
+	margin: 0px 0 0px 0;
+	text-align: left;
+	font-size: 9px;
+}
+
+#Statusbar a.admin {
+	font-size: 9px;
+}
+
+#StatusLeft {
+	
+	font-weight: bold;
+	color: #333;
+}
+
+#StatusRight {
+	text-align: right;
+	padding: 10px;
+}
+
+
+
+/*-------------------------------------------------
+TABS
+-------------------------------------------------*/
+
+#Tabs {
+	height: 21px;
+	margin: 0;
+	padding-left: 20px;
+}
+
+#Tabs li {
+	margin: 0; 
+	padding: 0;
+	display: inline;
+	list-style-type: none;
+	border: none;
+}
+	
+#Tabs a:link, #Tabs a:visited {
+	float: left;
+	background: #eaeac7;
+	font-size: 10px;
+	font-weight: normal;
+	padding: 3px 6px;
+	margin: 0 -1px 0 0;
+	border: 1px solid #036;
+	border-bottom: #eaeac7;
+	text-decoration: none;
+	color: #333;
+}
+
+#Tabs a:link.current, #Tabs a:visited.current {
+	border-bottom: 1px solid #fff;
+	background: #fff;
+	color: #393;
+	font-weight: bold;
+}
+
+#Tabs a:hover {
+	color: #000;
+	background: #ffc;
+}
+
+
+#Tabs li#AdminTab a:link, #Tabs li#AdminTab a:visited {
+	background: #000;
+	border-bottom: 1px solid #000;
+	color: #fff;
+}
+
+#Tabs li#AdminTab a:hover {
+}
+
+#Tabs li#AdminTab a.current {
+	background: #fff;
+	border-bottom: 1px solid #fff;
+	color: #000;
+}
+
+#Tabs li#AdminTab a.current:hover {
+}
+
+
+/*-------------------------------------------------
+Javascript ausklappscheisse
+-------------------------------------------------*/
+
+div#student-ps
+{
+margin: 0px 0px 0px 0px;
+display: none;
+width: 520px;
+}
+
+div#student-pa
+{
+margin: 0px 0px 0px 0px;
+display: none;
+width: 520px;
+}
+
+div#student-edu
+{
+margin: 0px 0px 0px 0px;
+display: none;
+width: 520px;
+}
+
+div#student-emgc
+{
+margin: 0px 0px 0px 0px;
+display: none;
+width: 520px;
+}
+
+div#student-med
+{
+margin: 0px 0px 0px 0px;
+display: none;
+width: 520px;
+}
+
+div#student-lang
+{
+margin: 0px 0px 0px 0px;
+display: none;
+width: 520px;
+}
+
+div#id1
+{
+display: none;
+}
+
+
+/*-------------------------------------------------
+SECTION HEADER
+-------------------------------------------------*/
+
+.SectionHeader {
+	width: 530px;
+	margin: 0px 0px 0px 0;
+	padding: 0px;
+	border-bottom: 1px dashed #dcdcdc;
+}
+
+
+.SectionHeader h1 /* title of the page */ {
+	padding-bottom: 2px;
+	border-bottom: 1px dashed #DCDCDC;
+	margin: 0;
+	font-size: 16px;
+	color: #000;
+}
+
+
+/*-------------------------------------------------
+BASIC FORM
+-------------------------------------------------*/
+
+#basic_form {
+  font-family: verdana, sans-serif;
+}
+
+#basic_form p.blockintro {
+	color: #666;
+	font-size: 11px;
+  line-height: 14px;
+  margin: 0;
+}
+
+#basic_form dl {}
+
+#basic_form dt {
+  width: 80px;
+  margin: 4px 8px 0 0; padding: 0;
+  text-align: right;
+  white-space: nowrap;
+  float: left;
+  clear: left;
+}
+
+#basic_form dd {
+  margin: 0 0 5px 0px;
+  font-size: 10px;
+}
+
+.addacompany #basic_form dt,
+.editcompany #basic_form dt { width: 120px; }
+.editcompany #basic_form dt { width: 120px; }
+.newprojectnewclient #basic_form dt { width: 120px; }
+.newprojectnewclient #basic_form dt.newcompanyname { margin-top: 0;}
+.newprojectnewclient #basic_form dd.newcompanyname {
+   font-size: 11px;
+   margin-bottom: 10px;
+ }
+
+ .appearance #basic_form dt { width: 150px; }
+
+.file_upload_settings #basic_form dt { width: 90px; }
+.file_upload_settings #basic_form dd { margin-left: 98px; }
+.file_upload_settings #basic_form dl#protocol dt { width: 20px; margin: 0; }
+.file_upload_settings #basic_form dl#protocol dd { margin: 0 18px 10px 28px; }
+.file_upload_settings #basic_form dl#hostaddress dt { width: 40px; }
+.file_upload_settings #basic_form dl#hostaddress dd { margin-left: 0; }
+.file_upload_settings_verification #basic_form div.block {
+	font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif;
+  padding: 8px 5px;
+  margin-bottom: 0;
+}
+
+#basic_form dt.required {
+  font-weight: bold;
+}
+
+#basic_form dd input {
+  vertical-align: middle;
+}
+
+
+#basic_form table td {
+	font-size: 12px;
+}
+
+#basic_form div.block {
+	color: #333;
+	background: #f0f0f0;
+	margin: 8px 0 15px 0;
+	padding: 10px;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+#basic_form div.block input {
+  font-size: 12px;
+}
+
+#basic_form h2 {
+	font-size: 14px;
+	color: #333;
+	padding-top: 14px;
+	padding-bottom: 3px;
+	margin: 0 0 1px 0;
+}
+
+
+#basic_form div.action {
+	border-top: 2px solid #000;
+	margin-bottom: 10px;
+	text-align: right;
+	padding-top: 8px;
+	font-size: 12px;
+}
+
+#basic_form div p {
+  margin: 0;
+}
+
+.settings #basic_form div#categories {
+  margin-bottom: 0;
+}
+
+.settings #basic_form div#categories li {
+  list-style: square;
+  margin-left: 15px;
+  font-size: 11px;
+}
+
+.settings #basic_form div#categories li span {
+  font-size: 10px;
+  color: #999;
+}
+
+.FormBlock {
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	font-size: 12px;
+	margin-top: 15px;
+	margin-right: 20px;
+	background: #F7F6F7;
+}
+
+.CalendarBlock {
+	border: 1px solid #ccc;
+	font-size: 11px;
+	margin-top: 15px;
+	margin-right: 20px;
+	padding: 10px 10 19px 10px;
+}
+
+.Homepageblock {
+	background : #F7FFF4;
+	border: 1px solid #B7ECA7;
+	font-size: 11px;
+	margin-top: 15px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+	padding: 10px 10 19px 10px;
+}
+
+
+
+/*--------------------------------- Search output -------------------------------------*/
+
+.stud_rows {
+	border: 1px dashed #e3e3e3;
+	width: 520px;
+	margin-bottom: 10px;
+	padding: 10px;
+	font-size: 10px;
+}
+
+
+.stud_rows IMG {
+	margin-right: 20px;
+}
+
+.stud_rows H1 {
+	font-size: 18px;
+	font-weight: normal;
+	padding-bottom: 5px;
+}
+
+.redbox {
+	width: 520px;
+	border: 1px dashed #AD56A4;
+	font-size: 11px;
+	padding: 12px;
+	}
+	
+.redbox .subheadline {
+	font-size: 11px;
+	}
+	
+.studentbox {
+	width: 520px;
+	border: 2px solid #AD56A4;
+	background: #f9edf8;
+	font-size: 11px;
+	padding: 12px;
+	}
+	
+.bluebox {
+	width: 520px;
+	background: #f8e8f6;
+	border: 1px solid #d28fcb;
+	font-size: 11px;
+	padding: 12px;
+	}
+	
+.bluebox TD {
+	font-size: 11px;
+	}
+	
+.greybox {
+	width: 520px;
+	background: #f7f6f7;
+	border: 1px solid #cccccc;
+	font-size: 11px;
+	padding: 10px;
+	}
+	
+.schoolbox {
+	width: 510px;
+	background: #fbfbfb;
+	border: 1px dotted #5673ad;
+	font-size: 15px;
+	margin-right: 28px;
+	margin-bottom: 10px;
+	padding: 12px;
+	}
+	
+.school_rows {
+	border-top: 1px dotted #5673ad;
+	border-bottom: 1px dotted #5673ad;
+	font-size: 11px;
+	margin-right: 28px;
+	margin-bottom: 10px;
+	padding: 12px;
+	}
+	
+.taskinfobox {
+	background: #F2F8FE;
+	border: 1px dotted #5E485A;
+	font-size: 11px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	padding: 10px;
+	}
+	
+td.off {
+background: #c3d3e2; FONT-SIZE: 10px;
+}
+
+td.off_today {
+background: #ED5FA6; FONT-SIZE: 10px;
+}
+
+
+td.off_nextmonth {
+background: #A99D7F; FONT-SIZE: 10px;
+}
+
+td.on {
+background: #c3d3e2; FONT-SIZE: 10px;
+}
+
+td.on_today {
+background: #DB0862; FONT-SIZE: 10px;
+}
+
+.post-body {
+  font-size: 11px;
+  line-height: 17px; 
+  align: left;
+  width: 25px;
+  padding: 1px;
+  background-color: #f2f2f2;
+  border: 1px solid #d2d2d2;
+} 
+
+
+.Newsletteroptions {
+	border: 1px solid #ccc;
+	height: 33px;
+	padding-left: 15px;
+	font-size: 12px;
+	margin-top: 15px;
+	margin-right: 30px;
+	background: #f0f0f0;
+	padding: 17px 20px 0px;
+}
+
+.Newsletteroptions_testmail {
+	border: 1px solid #ccc;
+	height: 35px;
+	padding-left: 15px;
+	font-size: 12px;
+	margin-top: 15px;
+	margin-right: 30px;
+	background: #f0f0f0;
+	padding: 10px 10 5px 15px;
+}
+
+.Newsletteroptions_sendmail {
+	border: 1px solid #D54B39;
+	height: 50px;
+	padding-left: 15px;
+	font-size: 12px;
+	margin-top: 25px;
+	margin-right: 30px;
+	background: #FCE5E2;
+	padding: 25px 10 5px 15px;
+}
+
+/* ------------------------------- Detentions ----------------------------- */
+
+.dtn_rows {
+	border-top: 1px dashed #838283;
+	width: 470px;
+	margin-left: 10px;
+	margin-top: 12px;
+	padding: 5px;
+}
+
+.dtn_rows H1 {
+	font-size: 15px;
+	margin: 5px 5 5 0px;
+	font-weight: normal;
+}
+
+.dtn_rows H1 IMG {
+	margin-right: 15px;
+}
+
+.dtn_rows H1 A {
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.dtn_rows H2 {
+	font-size: 11px;
+	margin: 8px 5 10 0px;
+	font-weight: normal;
+}
+
+/* ------------------------------- Attendence ----------------------------- */
+
+.attend_rows {
+	border-bottom: 1px solid #efefef;
+	width: 470px;
+	margin: 0px;
+	padding: 8px;
+}
+
+.attend_rows H1 {
+	font-size: 16px;
+	margin: 0px;
+	padding-left: 0px;
+	font-weight: normal;
+}
+
+.attend_rows H1 A {
+	font-size: 10px;
+	font-weight: normal;
+}
+
+
+/* ------------------------------- Setup  ----------------------------- */
+
+.countries_rows {
+	border: 1px solid #efefef;
+	width: 510px;
+	margin: 5px;
+	padding: 8px;
+	background-color:#f8f8f8;
+}
+
+.countries_rows H1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.countries_rows H1 A {
+	margin: 0px;
+	padding: 0px;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+.countries_addone {
+	padding: 20px;
+	border: 1px dotted #cdcdcd;
+	bg-color: #f2f2f2;
+	width: 490px;
+	margin: 0px;
+	background-color:#feffec;
+}
+
+
+div.venues_letters {
+margin-left: 20px;
+width: 500px;
+display: block;
+}
+
+div.venues_letter {
+text-align: center;
+font-size: 16px;
+float: left;
+margin-right: 9px;
+margin-top: 7px;
+color: #333333;
+border: 1px solid #cccccc;
+}
+
+div.venues_letter A {
+width: 30px;
+display: block;
+padding: 14px;
+text-decoration:none;
+color: #333333;
+}
+
+div.venues_letter A:hover {
+background: #e4e4e4;
+color: #333333;
+}
+
+div.newsletterpreview {
+border: 1px solid #E4E4E4;
+font-family: "Courier New", Courier, monospace;
+background: #FAF9F9;
+padding: 10px;
+color: #333333;
+}
+
+div.newsletter_archives_rows {
+margin-top: 10px;
+border-bottom: 1px solid #E4E4E4;
+width: 250px;
+}
+
+
+
+

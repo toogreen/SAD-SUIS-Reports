@@ -1,0 +1,295 @@
+<?php
+include ("login.php");
+include ("template.inc");
+include ("upload_class.php");
+include ("reports_variables.php");
+
+
+dbConnect ('');
+
+// USEFUL STUFF TO TEST FORMS	
+//var_dump($_POST);
+//print_r($_POST);	
+
+
+$t = new Template("templates");
+$t->set_file(array(
+		"body" => "admin_nav.htm",
+		"main" => "reports.htm"));
+
+// THIS IS A WORKAROUND FOR THE SEARCH DROP DOWN MENU TO WORK PROPERLY WHEN FILTERING RESULTS
+if($_GET[class_id] != "") {
+	$current_class_value = $_GET[class_id];
+	$current_class_text = "selected";
+	$current_class_any = "any";
+	$class_id = $_GET[class_id];
+} else {
+	$current_class_value = "";
+	$current_class_text = "all";
+	$current_class_any = ""; 
+}
+
+if($_GET[syear] != "") {
+	$syear = $_GET[syear];
+	$thisyear = 2000 + $syear; 							   
+	$nextyear = $thisyear + 1; 
+  	 $sryear_text = "$thisyear-$nextyear";
+} else {
+		$sryear_text =  "any";
+}	
+
+
+		$resultpage = $_GET[resultpage	];
+
+
+//-------------------- SET SOME VARIABLES ---------------------*/
+
+		// BUTTON TO ADD A REPORT FOR A STUDENT 
+		$add = "<a href='student-report.php?stud_id=$getarray[stud_id]&class_id=$class_id&inter=1&new=1'>ADD</a>";
+
+		// FORM AND DROP DOWN MENUS FOR SELECTING ONLY AN INTERIM REPORT OR YEAR 
+		$search_specify_form = "
+		<form method='post' type='post' onsubmit='Refresh' action='process_specify.php'>
+		Search for Interim #		
+		<select name='interim' size='0'>
+      <option value=''>any</option>
+		<!option value='$getarray[interim]' label='$getarray[interim]' selected>$interim</option>
+      <option value='1' label='1'>1</option>
+      <option value='2' label='2'>2</option>
+      <option value='3' label='3'>3</option>
+		<option value='4' label='4'>4</option>
+      </select>
+       , Year
+		<select name='syear' size='0'>
+      <option value='' label='' selected>any</option>
+      <!option value='$getarray[syear]' label='$getarray[syear]' selected>$sryear_text</option>
+      <option value='9' label='9'>2009-2010</option>
+      <option value='10' label='10'>2010-2011</option>
+      <option value='11' label='11'>2011-2012</option>
+      </select>
+      from
+      <select name ='class_id' size='0'>
+      <option value='$class_id' selected>$current_class_text</option>
+      <option value='' label='Any'>$current_class_any</option>
+      </select>
+       class(es)
+      <input type='submit' name='search' value='Search'>
+      <!input type='hidden' name='class_id' value='$class_id'>
+
+    	</form>
+		";
+		
+		//FORM AND DROP DOWN MENUS FOR SELECTION PARAMETERS TO CREATE A NEW USER
+		$create_report_form = "
+		<form method='post' type='post' onsubmit='Refresh' action='student-report.php'>
+		Create a new Interim Report		
+		<select name='interim' size='0'>
+      <option value='1' label='1'>1</option>
+      <option value='2' label='2'>2</option>
+      <option value='3' label='3'>3</option>
+		<option value='4' label='4'>4</option>
+      </select>
+       for Year
+		<select name='syear' size='0'>
+      <option value='9' label='9'>2009-2010</option>
+      <option value='10' label='10'>2010-2011</option>
+      <option value='11' label='11'>2011-2012</option>
+      &nbsp; for $getarray[firstname] $getarray[lastname] $getarray[chinesename]$getarray[class_name]
+      &nbsp;&nbsp;
+      <input type='submit' name='create_user' value='Create Report'>
+      <input type='hidden' name='stud_id' value='$stud_id'>
+      <input type='hidden' name='add' value='1'>
+      </select>
+    	</form>
+		";
+		
+	
+
+	/*--------------------------- Check the user level -------------------*/
+	
+		if(checklevel("view_student", $mylevel) == "0"){
+			message("You have no permission to access this page", "index.php", "3");
+			exit();
+		}
+
+
+//---------------- lastlogin -----------------------//
+
+		$timestamp = $_SESSION[lastlogin];
+		$yyyy = substr($timestamp, 0, 4);
+		$month = substr($timestamp, 4, 2);
+		$dd = substr($timestamp, 6, 2);
+		$hh = substr($timestamp, 8, 2);
+		$mm = substr($timestamp, 10, 2);
+		$ss = substr($timestamp, 12, 2);
+		
+		$t->set_var(LASTLOGIN, "$yyyy/$mm/$dd - $hh.$mm h");	
+		
+		
+		
+	$t->set_var(LOGINNAME, $_SESSION[uid]);
+	$t->set_var(LASTLOGIN, $_SESSION[lastlogin]);
+	
+	
+
+
+			//Where condition.. Either show all, or for one class, or for one student
+			
+			$where = "WHERE reports.rid > '0'";
+			//$where = " WHERE ";
+			
+			// IF CLASS_ID GOES HERE 
+			if($_GET[class_id] != "") {
+				
+				$where .= " AND student.class_id='$_GET[class_id]'";	
+			}
+			
+			// IF STUDENT_ID GOES HERE 
+			if($_GET[stud_id] != "") {
+			
+				$where .= " AND rsid='$_GET[stud_id]'";
+			
+			}
+	
+			// IF INTERIM IS SPECIFIED 
+			if($_GET[interim] != "") {
+			
+				$where .= " AND interim='$_GET[interim]'";
+			
+			}
+
+			// IF SCHOOL YEAR IS SPECIFIED 
+			if($_GET[syear] != "") {
+			
+				$where .= " AND syear='$_GET[syear]'";
+			
+			}
+
+				
+			$rs = new MysqlPagedResultSet("SELECT *
+											FROM reports 
+										LEFT JOIN student ON student.stud_id = reports.rsid
+										$where", "20","reports.php");		
+											//LEFT JOIN student ON stud_id = reports.rsid	
+			
+						if($rs->getTotalNum() > "0") {
+									
+							while ($getarray = $rs->fetchArray()) {
+								
+								// CONVERT SCHOOL YEARS INTO A READABLE FORMAT
+								$thisyear = 2000 + $getarray[syear]; 							   
+							   $nextyear = $thisyear + 1; 
+							   $sryear = "$thisyear-$nextyear";
+								 $t->set_var(SYEAR,"$thisyear-$nextyear");
+								
+								//cut it short and take of line breaks to make it look better la
+								$ana = cut_string($getarray[sess_ana], "400");
+								$ana = str_replace('<br>', '', $ana);
+								$ana = str_replace('<BR>', 'if($rs->getTotalNum() > "0") {', $ana);					
+								
+								// GET THE NAMES FROM STUDENT TABLE 
+								$getname = mysql_query("SELECT firstname, lastname, middlename, chinesename FROM student WHERE stud_id=$stud_id");
+								//$getarray2 = mysql_fetch_array($getname);			
+								
+								$detout .= "<div class='dtn_rows'><h1><img src=\"img/icon_stud_small.GIF\" align=\"left\"/>
+											<b>$getarray[lastname] $getarray[firstname] $getarray[middlename] $getarray[chinesename]</b></h1>
+											<!-- BUTTON TO VIEW REPORT -->
+											<a href='student-report.php?rid=$getarray[rid]&stud_id=$getarray[stud_id]'><img src='img/view.png' border='0' alt='View or Print this report'></a>
+											Interim Report $getarray[interim] for $sryear
+											<!-- BUTTON TO REMOVE REPORT (NOW DISABLED)
+											<a href='student-report.php?rid=$getarray[rid]&stud_id=$getarray[stud_id]&remove=1'><img src='img/delete.png' width='16' height='16' border='0' alt=''></a>										
+											* BUTTON TO EDIT REPORT END -->											
+											<a href='student-report.php?rid=$getarray[rid]&stud_id=$getarray[stud_id]&edit=1'><img src='img/edit.gif' border='0' alt='Edit this report'></a>																				
+											<br></div>												
+											";
+								}
+								$reports = "$search_specify_form 											
+											<!-- DISPLAY WHICH REPORTS ARE WE DISPLAYING -->
+											<br>
+											Now displaying <b>" . $rs->getTotalNum() . "</b> results: Interim Reports <b>$interim</b> for year <b>$sryear_text </b>	and <b>$current_class_text </b>	class(es) 
+											<br><br>$detout <br>
+											<!-- PRINT BUTTON STARTS HERE -->
+											<input type ='submit' action='student-reports-print.php?where=$where'  name='print' value='Print'><!img src='img/print.png' width=26 height=26 border=0 alt=''><!/a>&nbsp;&nbsp;
+											<!-- PRINT BUTTON STARTS HERE -->
+											<br>
+											" . $rs->getPageNb("");
+									
+						} else {
+									
+								//if searched by one student, and there's no result, then add a link to add a report for this student
+								//to make it nice we get his name 
+								
+								if($_GET[stud_id] != "" ) {
+								
+									$getname = mysql_query("SELECT firstname, lastname, chinesename FROM student WHERE stud_id=$_GET[stud_id]");
+									$getarray = mysql_fetch_array($getname);
+									
+									$reports = "<br>No reports yet for $getarray[firstname] $getarray[lastname] $getarray[chinesename]$getarray[class_name]. <br><br>
+													<!-- ADD A REPORT STARTS -->											
+													$create_report_form
+													<!-- ADD A REPORT ENDS -->
+													";
+								} else {
+									$reports = "$search_specify_form <br>No results";			
+								}
+						
+										
+						}
+
+						
+						$t->set_var("MAINSTAGE","<div class=\"SectionHeader\"><h1>Reports</h1></div>$reports ");
+
+	/*----------------------------- List with classes / studs for right column  ------------------------*/
+					
+						
+		if(($_GET[class_id]) == "") {
+			
+			//there's no class selected, so show the list with all classes
+			$get = mysql_query("SELECT class_id, class_name FROM classes ORDER BY class_name");
+			if(mysql_num_rows($get) > "0") {
+				while($getarray = mysql_fetch_array($get)){
+				
+						$classlist .= "<li><a href='reports.php?class_id=$getarray[class_id]'>Class $getarray[class_name]</a></li>";
+				
+				}
+				
+				$t->set_var("DETADDLIST","<ul>$classlist</ul>");
+				$t->set_var("CLASSNAME","$getarray[class_name]");
+				$class_name = $getarray[class_name];
+			
+			}	
+		
+		//class is selected, show all studs of this class
+		} else {
+			$get = mysql_query("SELECT student.firstname, student.lastname, student.chinesename, student.stud_id, classes.class_name 
+								FROM student 
+								LEFT JOIN classes ON classes.class_id = student.class_id
+								WHERE student.class_id='$class_id'");
+			
+			if(mysql_num_rows($get) > "0") {
+				while($getarray = mysql_fetch_array($get)){
+				
+						$classlist .= "<li><a href='reports.php?stud_id=$getarray[stud_id]'>Class $getarray[class_name] - $getarray[firstname] $getarray[lastname] $getarray[chinesename]</a></li>						
+						";
+				
+				}
+				
+				$t->set_var("DETADDLIST","<ul>$classlist</ul>");
+			
+			} else {
+				$t->set_var("DETADDLIST","<br>No students found");
+			}
+		
+		}			
+		
+		
+
+	
+	/*----------------------------- List with classes / studs for right column  ENDS HERE ------------------------*/
+					
+					
+$t->parse(CONTENT, "main");		
+$t->pparse(MAIN, "body");
+
+?>
+  </form>	

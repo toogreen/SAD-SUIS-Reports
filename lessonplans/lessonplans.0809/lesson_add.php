@@ -1,0 +1,93 @@
+<?php include("includes/inc_editvar.php"); ?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<table>
+<head>
+<title><?echo($lname);?>'s <?echo($sub);?> <?echo($lclass);?> lesson plans</title>
+<link href="includes/stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="<? echo($bgcolor); ?>" leftmargin="15" topmargin="15" marginwidth="15" marginheight="15">
+<a name="top"></a>
+
+<!-- TITLE BEGIN -->
+<div align="center"><font size='4' face='Verdana, Arial, Helvetica, sans-serif'><b><?echo($lname);?>'s <?echo($lclass);?> <?echo($sub);?> lesson plans for the week of <?echo($wdate);?></b></font><br><br></div>
+<!-- TITLE END -->
+
+<!--ADD UNIT STARTS HERE-->		
+<form action="insert_lesson.php" method="post">
+<input type="hidden" name="luser" value="<? echo($luid);?>">
+<input type="hidden" name="uname" value="<? echo($name);?>">
+<input type="hidden" name="week" value="<? echo($wid);?>">
+
+<br>
+<!--LESSON MAIN TABLE STARTS HERE-->
+<table align="middle" width="<?echo ($width);?>" border="<? echo ($border);?>" cellpadding="5" cellspacing="<? echo ($cs);?>" bordercolor="#000000" bgcolor="#000000">
+  <tr> 
+    <td colspan="3" bgcolor="#FFFFFF"><strong>Day:</strong>
+    <select name="day" size="1">
+			<option value='1'>Monday</option>
+			<option value='2'>Tuesday</option>
+			<option value='3'>Wednesday</option>
+			<option value='4'>Thursday</option>
+			<option value='5'>Friday</option>
+			<option value='6'>Applies to whole week</option>
+		</select>
+    <br><strong>Date:</strong> <input type="text" name="date" value="<? echo date("Y-m-d"); ?>" size="20">
+      </font></td>
+  </tr>
+  <tr>
+  </tr>
+  <tr bgcolor="#FFFFFF"> 
+    <td colspan="3"><strong><? echo($lesson_obj); ?></strong><br><br>
+	<b>1. </b><input type="text" name="obj1" value="" size="80"><br>
+	<b>2. </b><input type="text" name="obj2" value="" size="80"><br>
+	<b>3. </b><input type="text" name="obj3" value="" size="80"><br>
+    </td>
+  </tr>
+  <tr valign="top" bgcolor="#FFFFFF"> 
+    <td colspan="3"><strong><? echo($lesson_res); ?></strong><br><br>
+    <textarea cols="80" rows="4" name="mat"></textarea></td>
+  </tr>
+<!-- SPACING BEGINS -->
+	<tr><td height="<? echo($spacing);?>"></td></tr>
+<!-- SPACING ENDS -->
+
+<!--PROCEDURES SECTION BEGIN-->
+  <tr valign="top" bgcolor="#FFFFFF"> 
+    <td width="10%"><strong><? echo($lesson_time); ?></strong></td>
+    <td width="80%"><strong><? echo($lesson_content); ?></strong></td>
+    <td width="10%"><strong><? echo($lesson_inter); ?></strong></td>
+   </tr>
+	<tr valign="top" bgcolor="#FFFFFF"> 
+    <td width="10%">&nbsp;</td>
+    <td width="80%"><font color='#E53232'>Please fill the rest first, the next screen will allow you to add several entries here.</td>
+    <td width="10%"></td>
+    </tr>  	
+<!--PROCEDURES SECTION ENDS -->
+
+<!-- SPACING BEGINS -->
+	<tr><td height="<? echo($spacing);?>"></td></tr>
+<!-- SPACING ENDS -->	
+
+<!-- EVALUATION PART BEGINS HERE -->
+<tr bgcolor="#FFFFFF"> 
+    <td colspan="3" colspan="3"><strong><? echo($lesson_diff); ?></strong><br><br>
+		<textarea cols="80" rows="4" name="stud"></textarea>
+    </td>
+  </tr>
+  <tr bgcolor="#FFFFFF"> 
+    <td colspan="3"><strong><? echo($lesson_eval); ?></strong><br><br>
+		<textarea cols="80" rows="4" name="eval"></textarea>
+    </td>
+  </tr>
+<!-- EVALUATION PART ENDS HERE -->    	
+</table>
+<!--LESSON MAIN TABLE STOPS HERE-->  	
+<br>	
+<div align="center"><input type="Submit" value="Add learning procedures for this lesson plan"></div>
+</form>
+<br><br>
+<!--ADD UNIT STOPS HERE-->
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<center>
+<table width="100%" height="100%">
+<tr>
+<td align="middle">
+<?
+include("includes/inc_editvar.php");
+include("includes/connect_db.php");
+
+$query="DELETE FROM users WHERE uid='$uid'";
+$query2="DELETE FROM week WHERE wuid='$uid'";
+$query3="DELETE FROM lesson WHERE user='$uid'";
+$query4="DELETE FROM act WHERE auid='$uid'";
+mysql_query($query);
+mysql_query($query2);
+mysql_query($query3);
+mysql_query($query4);
+echo "Record deleted";
+mysql_close();
+?>
+<br><br>
+<A href="week.php?uid=<? echo ($uid); ?>&edit=<?echo($editvar);?>">Reload</A>
+</td>
+</tr>
+</table>
+</center>

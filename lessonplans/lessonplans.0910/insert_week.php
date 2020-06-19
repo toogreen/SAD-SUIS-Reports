@@ -1,0 +1,17 @@
+<center>
+<table width="100%" height="100%">
+<tr>
+<td align="middle">
+<?
+include("includes/inc_editvar.php");
+include("includes/connect_db.php");
+
+// SHOULD BE 22 EMPTY FIELDS AT END
+$query="INSERT INTO week VALUES ('', '$wuid','$wdate','','','','','','','','','','','','','','','','','','','','','','')";
+mysql_query($query);
+echo "Record saved";
+mysql_close();
+
+echo "<br><br>";
+echo "<A href='week.php?edit=$editvar&luid=$luid&lname=$lname&wid=$wid'>Click here to continue</A></td></tr></table></center>";
+?>

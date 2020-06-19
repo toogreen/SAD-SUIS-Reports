@@ -1,0 +1,29 @@
+    <tr>
+      <td height="15" align="left"><font size="-2">{TEXT_SU}</font></td>
+    	<td height="15" align="center"><font size="-2">{UT}</font>  </td>
+      <td height="15" align="center"><font size="-2">{U1}</font> 	</td>
+      <td height="15" align="center"><font size="-2">{U2}</font>  </td>
+      <td height="15" align="center"><font size="-2">{U3}</font>  </td>
+    </tr>
+	{ICT_CELL}
+    <tr>
+      <td height="15" align="left"><font size="-2">{TEXT_SMU}</font></td>
+    	<td height="15" align="center"><font size="-2">{MUT}</font>  </td>
+      <td height="15" align="center"><font size="-2">{MU1}</font> 	</td>
+      <td height="15" align="center"><font size="-2">{MU2}</font>  </td>
+      <td height="15" align="center"><font size="-2">{MU3}</font>  </td>
+    </tr>
+    <tr>
+      <td height="15" align="left"><font size="-2">{TEXT_SPE}</font></td>
+    	<td height="15" align="center"><font size="-2">{PET}</font>  </td>
+      <td height="15" align="center"><font size="-2">{PE1}</font> 	</td>
+      <td height="15" align="center"><font size="-2">{PE2}</font>  </td>
+      <td height="15" align="center"><font size="-2">{PE3}</font>  </td>
+    </tr>
+    <tr>
+      <td height="15" align="left"><font size="-2">{TEXT_ART}</font></td>
+	  <td height="15" align="center"><font size="-2">{ARTT}</font>  </td>
+      <td height="15" align="center"><font size="-2">{ART1}</font> 	</td>
+      <td height="15" align="center"><font size="-2">{ART2}</font>  </td>
+      <td height="15" align="center"><font size="-2">{ART3}</font>  </td>
+    </tr>

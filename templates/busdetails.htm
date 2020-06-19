@@ -1,0 +1,32 @@
+<form name="myForm" method="post" action="" id="basic_form" Enctype="multipart/form-data">
+  <div class="SectionHeader">
+     <h1><img src="img/icon_bus.gif" /> </h1>
+</div>
+  <br />
+  <table width="100%" border="0" cellspacing="1" cellpadding="4" align="center">
+    
+    <tr bgcolor="#FAFAFA"> 
+      <td width="31%" height="34" valign="top">Bus name </td>
+      <td width="69%" height="34">
+        <input name="bus_name" type="text" id="bus_name" value="{BUSNAME}" style="width:340px;" />      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" valign="top">Route </td>
+      <td height="34">
+        <textarea name="bus_route" rows="6" id="bus_route" style="width:340px;">{BUSROUTE}</textarea>      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34" valign="top">Capacity</td>
+      <td height="34">{CAPACITY}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">&nbsp;</td>
+      <td height="30">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td width="31%" bgcolor="#FFFFFF">         </td>
+      <td>	  <input name="bus_id" type="hidden" id="bus_id" value="{BUSID}" />
+      <input name="submit" type="submit" id="submit" value="submit" /></td>
+    </tr>
+  </table>
+</form>

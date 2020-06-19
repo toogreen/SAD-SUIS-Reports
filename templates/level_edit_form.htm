@@ -1,0 +1,93 @@
+<style type="text/css">
+<!--
+.Stil1 {font-size: 10px}
+-->
+</style>
+<form name="myForm" method="post" action="level-edit.php">
+  <div class="SectionHeader">
+     <h1><img src="img/txt_userlevel.gif" width="300" height="60" /></h1>
+</div>
+
+  <br />
+  <table width="100%" border="0" cellspacing="1" cellpadding="4" align="center">
+    <tr bgcolor="#FAFAFA"> 
+      <td width="38%" height="34">Level Name </td>
+      <td width="62%" height="34">
+        <input name="level_name" type="text" id="level_name" value="{LEVELNAME}" style="width:200px;" />      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">Can view students </td>
+      <td height="30">{VIEWSTUDENT}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">Cann add students </td>
+      <td height="30">{ADDSTUDENT}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">Personal information </td>
+      <td height="30">{STUDENTPS}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">Partents information </td>
+      <td height="30">{STUDENTPA}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">Education background </td>
+      <td height="30">{STUDENTEDU}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">Emergency information </td>
+      <td height="30">{STUDENTEMGC}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">Medical Status </td>
+      <td height="30">{STUDENTMED}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">Language profile </td>
+      <td height="30">{STUDENTLANG}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">Transportation information </td>
+      <td height="30">{STUDENTTRANSPORT}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">Student's accomodation </td>
+      <td height="30">{STUDENTDORM}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">Comments</td>
+      <td height="30">{STUDENTDET}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">Payment information </td>
+      <td height="30">{STUDENTPAYMENT}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">Attendance</td>
+      <td height="30">{STUDENTATTENDANCE}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">Psychological profile </td>
+      <td height="30">{STUDENTPSYCHO}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">Admission Behaviour Test </td>
+      <td height="30">{STUDENTADBE}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">Can Access &quot;Setup&quot; Page </td>
+      <td height="30">{ACCESSSETUP}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">Can edit User Rights</td>
+      <td height="30">{EDITLEVEL}</td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td width="38%" bgcolor="#FFFFFF">&nbsp;</td>
+      <td>
+	  <input name="level_id" type="hidden" id="level_id" value="{LEVELID}" />
+      <input name="submit" type="submit" id="submit" value="submit" />	  </td>
+    </tr>
+  </table>
+</form>

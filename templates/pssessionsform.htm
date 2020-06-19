@@ -1,0 +1,58 @@
+  <div class='schoolbox'>
+ <form name="addsession" method="get" action="ps_session_edit.php" id="basic_form" style="border:0px">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td height="70" colspan="2" valign="top"><img src="img/txt_addsession.gif" width="300" height="60" /></td>
+      </tr>
+        <td width="29%" height="28">Student Name </td>
+          <td width="71%" height="28">{STUDNAME}</td>
+  </tr>
+  
+  <tr>
+    <td height="28">Enrolled</td>
+    <td height="28">{ENROLLED}</td>
+  </tr>
+  <tr>
+    <td height="28">Class</td>
+    <td height="28">{CLASSNAME}</td>
+  </tr>
+  <tr>
+    <td height="10" colspan="2">&nbsp;</td>
+    </tr>
+  <tr>
+    <td height="28">Session Number </td>
+    <td height="28"><label>
+      <input name="sess_nb" type="text" id="sess_nb" value="{SESSNB}" style="width: 100px"/>
+      {PREVSESSIONHELP}
+    </label></td>
+  </tr>
+  <tr>
+    <td height="28">&nbsp;</td>
+    <td height="28">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="28">Who is present </td>
+    <td height="28">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="28" colspan="2"><textarea name="sess_person" rows="3" id="sess_person" style="width: 480px">{SESSPERSON}</textarea></td>
+    </tr>
+  
+  <tr>
+    <td height="34" colspan="2">Anamnesis</td>
+    </tr>
+  <tr>
+    <td height="34" colspan="2"><label>
+      <textarea name="sess_ana" rows="14" id="sess_ana" style="width: 480px">{SESSANA}</textarea>
+    </label></td>
+    </tr>
+  <tr>
+    <td height="50" colspan="2" align="center"><label>
+      <input name="sess_id" type="hidden" id="sess_id" value="{SESSID}" />
+      <input name="stud_id" type="hidden" id="stud_id" value="{STUDID}" />
+      <input name="submit" type="submit" id="submit" value="Input / Edit" />
+    </label></td>
+  </tr>
+</table>
+</form>
+</div>

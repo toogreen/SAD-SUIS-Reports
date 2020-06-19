@@ -1,0 +1,22 @@
+<center>
+<table width="100%" height="100%">
+<tr>
+<td align="middle">
+<?
+
+include("includes/connect_db.php");
+
+$query="UPDATE users SET uid='', name='$ud_name', class='$ud_class' WHERE uid='$ud_uid'";
+mysql_query($query);
+echo $ud_uid;
+echo $ud_class;
+echo $ud_name;
+echo "Record updated";
+mysql_close();
+?>
+<br><br>
+<A href="index.php?edit=1&id=<? echo($id)?>&uid=<? echo ($uid);?>&wid=<?echo ($wid);?>#<? echo($id);?>">Go back</A>
+</td>
+</tr>
+</table>
+</center>

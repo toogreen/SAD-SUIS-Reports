@@ -1,0 +1,53 @@
+<style type="text/css">
+<!--
+.style1 {font-size: 9px}
+.style2 {color: #FF0000}
+-->
+</style>
+<div class="SectionHeader">
+     <h1><img src="img/txt_newsletter.gif" width="300" height="60" /> </h1>
+</div>
+<form action="newsletter.php" method="post" style="margin-right:20px;">
+	
+  <div id="basic_form">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="54" colspan="2"><span class="style1">This newsletter has not been sent yet. <span class="style2">Do not use the back button of your browser !!! </span><br />
+        Click the sent button at the bottom to send the newsletter</span> </td>
+      </tr>
+      <tr>
+        <td width="35%" height="25"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Newsletter to: </font></td>
+        <td width="65%" height="25"> <h1>{NEWSLETTERLIST}</h1></td>
+      </tr>
+      <tr>
+        <td height="25"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Number of recipients: </font></td>
+        <td height="25"><h1>{NBRECIPIENT}</h1></td>
+      </tr>
+      <tr>
+        <td height="25"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Subject line:</font></td>
+        <td height="25"><h1>{SUBJECT}</h1></td>
+      </tr>
+      <tr>
+        <td height="25"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Sender email address: </font></td>
+        <td height="25"><h1>{SENDERADDRESS}</h1></td>
+      </tr>
+      <tr>
+        <td height="10" colspan="2">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="25"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Newsletter Preview: </font></td>
+        <td height="25">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="35" colspan="2">
+		<div class='newsletterpreview'>{PREVIEW}</div></td>
+      </tr>
+    </table>
+    <br>
+    <br />
+    <input name="newsletter_id" type="hidden" id="newsletter_id" value="{NEWSLETTERID}">
+    <input name="editnewsletter" type="submit" id="editnewsletter" value="previous step &lt;&lt; edit newsletter" />
+     <input name="sendnewsletter" type="submit" id="sendnewsletter" value="next step &gt;&gt; send newsletter">
+  </font></div>
+</form>
+	    <br><br />

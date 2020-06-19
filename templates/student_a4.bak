@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>SUIS Student Database - Student profile: {LASTNAME} {FIRSTNAME} {CHINESENAME}</title>
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+h1 {
+	font-size: 16px;
+}
+
+h2 {
+	font-size: 14px;
+}
+-->
+</style></head>
+
+<body>
+  <br />
+ <table width="75%" border="0" cellspacing="1" cellpadding="4" align="TOP" valign="TOP">
+    <tr>
+      <td width="26%" height="15"><b>Student ID number </b></td>
+      <td width="74%" height="15">{STUDNB}      </td>
+    </tr>
+    <tr>
+      <td width="26%" height="15"><b>Pre-interview results</b></td>
+      <td width="74%" height="15">{PREINTRES}      </td>
+    </tr>
+
+    <tr>
+      <td width="26%" height="15"><b>Family name english </b></td>
+      <td width="74%" height="15">{LASTNAME}      </td>
+    </tr>
+    <tr>
+      <td height="15"><b>First / middle name</b> </td>
+      <td height="15">{FIRSTNAME} {MIDDLENAME}      </td>
+    </tr>
+    <tr>
+      <td height="15"><b>Name Chinese</b></td>
+      <td height="15">{CHINESENAME}      </tPREINTRESd>
+    </tr>
+    <tr>
+      <td height="15"><b>Preferred  Name</b></td>
+      <td height="15">{PREFNAMEDROP}</td>
+    </tr>
+	 <tr>
+      <td height="30"><b>Classroom</b></td>
+      <td height="30">{CLASSNAME} </td>
+    </tr>
+    <tr>
+      <td height="15"><b>Date of Birth</b> </td>
+      <td height="15">{DOBDROP}</td>
+    </tr>
+    <tr>
+      <td height="15"><b>Place of Birth</b> </td>
+      <td height="15">{PLACEOFBIRTH}      </td>
+    </tr>
+    <tr>
+      <td height="15"><b>Gender</b></td>
+      <td height="15">{SEXDROP}</td>
+    </tr>
+    <tr>
+      <td height="15"><b>Nationality</b></td>
+      <td height="15">{NATIONALITY}      </td>
+    </tr>
+    <tr>
+      <td height="15"><b>Passport number</b> </td>
+      <td height="15">{PASSPORTNB}      </td>
+    </tr>    	<td width=50%><!-- LEFT COLUMN -->
+    <tr>
+      <td height="15"><b>Passport expires</b></td>
+      <td height="15">{PASSPORTEXP}</td>
+    </tr>
+    <tr>
+      <td height="15"><b>Descent</b></td>
+      <td height="15">{DESCENTDROP}</td>
+    </tr>
+    <tr>
+      <td height="15"><b>Present grade</b> <br />
+      (at time of application) </td>
+      <td height="15">{CURRENTGRADE}      </td>
+    </tr>
+    <tr>
+      <td height="15"><b>Expected length of stay</b></td>
+      <td height="15">{EXPLENGTHSTAY}      </td>
+    </tr>
+    <tr>
+      <td height="30"><b>Payment </b></td>
+      <td height="30">{PAYMENT}</td>
+    </tr>
+    <tr>
+      <td height="30"><b>Bus number</b></td>
+      <td height="30">{BUSOUT}</td>
+    </tr>
+    <tr>
+      <td height="30"><b>Dorm</b></td>
+      <td height="30">{DORM}</td>
+    </tr>
+    <tr>
+      <td height="30"><b>Psychology sessions</b></td>
+      <td height="30">{PSYCHOSESSION}</td>
+    </tr>
+    <tr>
+      <td height="30"><b>Attendence</b></td>
+      <td height="30">{ATTENDENCE}</td>
+    </tr>
+    <tr>
+      <td height="30"><b>Detentions</b></td>
+      <td height="30">{DETENTIONS}</td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td width="26%">&nbsp;</td>
+    </tr> 
+</table>
+
+<!-- HIDDEN TABLE IS BELOW -->
+
+ <TABLE width="100%" VALIGN="TOP" BORDER="0">
+<TR>
+<TD width="50%" VALIGN="TOP">
+
+<h1>Details of Parents</h1>
+
+ <table width="100%" border="0" cellspacing="1" cellpadding="4" align="top">
+    <tr>
+      <td height="59">Legal  Custodian</td>
+      <td height="59">{LEGALCUSTODIAN}</td>
+    </tr>
+    <tr>
+      <td height="15" colspan="2"><h2>Father</h2></td>
+    </tr>
+    <tr> 
+      <td width="26%" height="15">Name</td>
+      <td width="74%" height="15">
+        {FATHERNAME}      </td>
+    </tr>
+    <tr>
+      <td height="15">Nationality</td>
+      <td height="15">
+        {FATHERNATIONALITY}      </td>
+    </tr>
+    <tr> 
+      <td height="15">Phone</td>
+      <td height="15">
+        {FATHERPHONE}      </td>
+    </tr>
+    <tr>
+      <td height="15">Mobile Phone </td>
+      <td height="15">{FATHERPHONEMOBILE}</td>
+    </tr>
+    <tr>
+      <td height="15">Email</td>
+      <td height="15">{FATHEREMAIL}</td>
+    </tr>
+    <tr>
+      <td height="15">Company Phone </td>
+      <td height="15">{FATHERPHONECOMPANY}</td>
+    </tr>
+    <tr> 
+      <td height="15">Company</td>
+      <td height="15">
+        {FATHERCOMPANY}      </td>
+    </tr>
+    <tr> 
+      <td height="15">Title / Position </td>
+      <td height="15">
+        {FATHERTITLE}      </td>
+    </tr>
+    <tr>
+      <td height="15" valign="top">Company Address </td>
+      <td height="15">
+        {FATHERCOMPANYADDRESS}      </td>
+    </tr>
+    <tr>
+      <td height="15" valign="top">Home Address </td>
+      <td height="15">{FATHERHOMEADDRESS}</td>
+    </tr>
+    <tr>
+      <td height="15" valign="top">English skills </td>
+      <td height="15">{FATHERLANGUAGEEN}</td>
+    </tr>
+    <tr>
+      <td height="15" valign="top">Chinese skills </td>
+      <td height="15">{FATHERLANGUAGECN}</td>
+    </tr>
+    <tr>
+      <td height="15" valign="top">Native language</td>
+      <td height="15">{FATHERNATIVE}</td>
+    </tr>
+    <tr>
+      <td height="10" colspan="2">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td height="15" colspan="2"><h2>Mother</h2></td>
+    </tr>
+    <tr> 
+      <td width="26%" height="15">Name</td>
+      <td width="74%" height="15">
+        {MOTHERNAME}      </td>
+    </tr>
+    <tr>
+      <td height="15">Nationality</td>
+      <td height="15">
+        {MOTHERNATIONALITY}      </td>
+    </tr>
+    <tr> 
+      <td height="15">Phone</td>
+      <td height="15">
+        {MOTHERPHONE}      </td>
+    </tr>
+    <tr>
+      <td height="15">Mobile Phone </td>
+      <td height="15">{MOTHERPHONEMOBILE}</td>
+    </tr>
+    <tr>
+      <td height="15">Email</td>
+      <td height="15">{MOTHEREMAIL}</td>
+    </tr>
+    <tr>
+      <td height="15">Company phone</td>
+      <td height="15">{MOTHERPHONECOMPANY}</td>
+    </tr>
+    <tr> 
+      <td height="15">Company</td>
+      <td height="15">
+        {MOTHERCOMPANY}      </td>
+    </tr>
+    <tr> 
+      <td height="15">Title / Position </td>
+      <td height="15">{MOTHERTITLE}</td>
+    </tr>
+    <tr>
+      <td height="15" valign="top">Company Address </td>
+      <td height="15">
+        {MOTHERCOMPANYADDRESS}      </td>
+    </tr>
+    <tr>
+      <td height="15" valign="top">Home Address </td>
+      <td height="15">{MOTHERHOMEADDRESS}</td>
+    </tr>
+    <tr>
+      <td height="15" valign="top">English skills </td>
+      <td height="15">{MOTHERLANGUAGEEN}</td>
+    </tr>
+    <tr>
+      <td height="15" valign="top">Chinese skills </td>
+      <td height="15">{MOTHERLANGUAGECN}</td>
+    </tr>
+    <tr>
+      <td height="15" valign="top">Native language</td>
+      <td height="15">{MOTHERNATIVE}</td>
+    </tr>
+    <tr>
+      <td height="10" colspan="2">&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="21" valign="top">Other comments </td>
+      <td height="21">{PARENTSOTHERS}</td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td width="26%" bgcolor="#FFFFFF">&nbsp;</td>
+      <td>	</td>
+    </tr>
+  </table>
+</TD>
+
+<TD width="50%" VALIGN="TOP">
+
+</TD>
+</TR>
+</TABLE>
+
+</body>
+</html>

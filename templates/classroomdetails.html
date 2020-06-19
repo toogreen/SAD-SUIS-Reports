@@ -1,0 +1,44 @@
+<form name="myForm" method="post" action="" id="basic_form" Enctype="multipart/form-data">
+  <div class="SectionHeader">
+     <h1><img src="img/txt_classrooms.gif" width="300" height="60" /></h1>
+</div>
+  <br />
+  <table width="100%" border="0" cellspacing="1" cellpadding="4" align="center">
+    
+    <tr bgcolor="#FAFAFA"> 
+      <td width="31%" height="34">Class name (e.g. 1A) </td>
+      <td width="69%" height="34">
+        <input name="class_name" type="text" id="class_name" value="{CLASSNAME}" style="width:340px;" />      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34">Grade</td>
+      <td height="34">{GRADE}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Capacity</td>
+      <td height="34">{CAPACITY}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Homeroom Teacher</td>
+      <td height="34"> <input name="class_ht" type="text" id="class_name" value="{CLASSHT}" style="width:340px;" /></td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Curriculum</td>
+      <td height="34"> <select name='class_stream' size='0'>
+															<option value='{CLASSSTREAM}' label='{CLASSSTREAM}'>{CLASSSTREAM}</option>
+															<option value='0' label='0'>PYP</option>
+      													<option value='1' label='1'>ICE</option>
+      													<option value='2' label='2'>MYP</option>
+      													</select></td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">&nbsp;</td>
+      <td height="30">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td width="31%" bgcolor="#FFFFFF">         </td>
+      <td>	  <input name="class_id" type="hidden" id="class_id" value="{CLASSID}" />
+      <input name="submit" type="submit" id="submit" value="submit" /></td>
+    </tr>
+  </table>
+</form>

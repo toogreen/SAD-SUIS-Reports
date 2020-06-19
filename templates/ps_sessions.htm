@@ -1,0 +1,36 @@
+<div class="Left">
+  <div class="col">
+<br />
+{MAINSTAGE}
+  </div>
+</div>
+
+<!-- RIGHT RAIL -->
+
+<div class="Right">
+  <div class="col">
+  <br>
+  <h1>Show Sessions for</h1>
+	  	<DIV id=listings_inside>
+        {DETADDLIST}<br />
+ <div class="FormBlock">
+		<form action="student.php" method="get" name="quicksearch">
+		<br>
+        <h1>Find student by name</h1>
+		<br>
+        Family Name<br>
+        <input name="lastname" type="text" style="width:220px; margin-bottom:10px;">
+        <br />First Name<br>
+        <input name="firstname" type="text" style="width:220px; margin-bottom:10px;">
+        <br />Chinese Name<br>
+        <input name="chinesename" type="text" style="width:220px; margin-bottom:10px;">
+        <br>
+		<input name="searchmode" type="hidden" value="2" />
+		<input name="status" type="hidden" value="1" />
+		<input name="submit" type="submit" value="search">
+		<br><br>
+		</form>
+  </div>
+
+</div>
+

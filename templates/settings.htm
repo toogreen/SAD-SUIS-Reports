@@ -1,0 +1,155 @@
+<div class="SectionHeader">
+     <h1><br /><img src="img/txt_searchbrowse.gif" /></h1>
+</div><br />
+  <div class='schoolbox'>
+ <form name="addschool" method="get" action="" id="basic_form" style="border:0px">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td height="34">Status</td>
+      <td height="34"><select name='status' id="status">
+        <option value='' selected="selected"></option>
+        <option value='0'>inactive</option>
+        <option value='1'>active</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td height="34">Classroom</td>
+      <td height="34">{CLASSESDROP}</td>
+    </tr>
+    <tr>
+      <td height="34" colspan="2"><img src="img/icon_personal.gif" width="300" height="60" /></td>
+      </tr>
+      <td width="27%" height="34">Family Name English </td>
+        <td width="73%" height="34"><input name="lastname" type="text" id="lastname" style="width:320px;" /></td>
+  </tr>
+  <tr>
+    <td height="34">First Name English </td>
+    <td height="34"><input name="firstname" type="text" id="firstname" style="width:320px;" /></td>
+  </tr>
+  <tr>
+    <td height="34">Chinese Name </td>
+    <td height="34"><input name="chinesename" type="text" id="chinesename" style="width:320px;" /></td>
+  </tr>
+  <tr>
+    <td height="34">Enrolled in</td>
+    <td height="34">between
+      <select name='enrolled_month_from' id="enrolled_day_from">
+      <option value='' selected="selected"></option>
+      <option value='01'>1</option>
+      <option value='02'>2</option>
+      <option value='03'>3</option>
+      <option value='04'>4</option>
+      <option value='05'>5</option>
+      <option value='06'>6</option>
+      <option value='07'>7</option>
+      <option value='08'>8</option>
+      <option value='09'>9</option>
+      <option value='10'>10</option>
+      <option value='11'>11</option>
+      <option value='12'>12</option>
+    </select>
+      {ENROLLEDYEAR_FROM}
+      and 
+      <select name='enrolled_month_until' id="enrolled_day_until">
+        <option value='' selected="selected"></option>
+        <option value='01'>1</option>
+        <option value='02'>2</option>
+        <option value='03'>3</option>
+        <option value='04'>4</option>
+        <option value='05'>5</option>
+        <option value='06'>6</option>
+        <option value='07'>7</option>
+        <option value='08'>8</option>
+        <option value='09'>9</option>
+        <option value='10'>10</option>
+        <option value='11'>11</option>
+        <option value='12'>12</option>
+      </select>
+      {ENROLLEDYEAR_UNTIL}</td>
+  </tr>
+  <tr>
+    <td height="34">Nationality</td>
+    <td height="34">{NATIONSDROP}</td>
+  </tr>
+  
+  <tr>
+    <td height="34">Gender</td>
+    <td height="34">{SEXDROP}</td>
+  </tr>
+  <tr>
+    <td height="34">Descent</td>
+    <td height="34">{DESCENT}</td>
+  </tr>
+  <tr>
+    <td height="34">Date of Birth </td>
+    <td height="34">Month
+      <select name='month' style='margin-right: 5px'>
+        <option value='' selected="selected"></option>
+        <option value='01'>1</option>
+        <option value='02'>2</option>
+        <option value='03'>3</option>
+        <option value='04'>4</option>
+        <option value='05'>5</option>
+        <option value='06'>6</option>
+        <option value='07'>7</option>
+        <option value='08'>8</option>
+        <option value='09'>9</option>
+        <option value='10'>10</option>
+        <option value='11'>11</option>
+        <option value='12'>12</option>
+      </select>
+Year {YEAR}</td>
+  </tr>
+  <tr>
+    <td height="34" colspan="2"><img src="img/icon_parents.gif" width="300" height="60" /></td>
+    </tr>
+  <tr>
+    <td height="34">Fathers Name </td>
+    <td height="34"><input name="fathername" type="text" id="fathername" style="width:320px;" /></td>
+  </tr>
+  <tr>
+    <td height="34">Mothers Name </td>
+    <td height="34"><input name="mothername" type="text" id="mothername" style="width:320px;" /></td>
+  </tr>
+  <tr>
+    <td height="34" colspan="2"><img src="img/icon_transport_fbbg.gif" width="300" height="60" /></td>
+    </tr>
+  <tr>
+    <td height="34">On Bus </td>
+    <td height="34">{BUSDROP}</td>
+  </tr>
+  <tr>
+    <td height="34" colspan="2"><img src="img/icon_payment_white.gif" width="300" height="60" /></td>
+  </tr>
+  <tr>
+    <td height="34">Tuition fee </td>
+    <td height="34">{PAYTUT}</td>
+  </tr>
+  <tr>
+    <td height="34">Application fee </td>
+    <td height="34">{PAYAPPL}</td>
+  </tr>
+  <tr>
+    <td height="34">Seat deposit fee </td>
+    <td height="34">{PAYSEAT}</td>
+  </tr>
+  <tr>
+    <td height="34">School bus </td>
+    <td height="34">{PAYBUS}</td>
+  </tr>
+  <tr>
+    <td height="34">Dormitory</td>
+    <td height="34">{PAYDORM}</td>
+  </tr>
+  <tr>
+    <td height="34">Uniform</td>
+    <td height="34">{PAYUNI}</td>
+  </tr>
+  <tr>
+    <td height="80" colspan="2" align="center"><label>
+      <input name="submit" type="submit" id="submit" value="show results" />
+    </label></td>
+  </tr>
+</table>
+</form>
+</div>

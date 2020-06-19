@@ -1,0 +1,117 @@
+  <div class='redbox'>
+  {ADMINMSG}
+  </div>
+<div class="SectionHeader">
+     <h1><img src="img/icon_education.gif" /></h1>
+</div><br />
+ {SCHOOLS}
+  <div class='schoolbox'>
+ <form name="addschool" method="post" action="" id="basic_form">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="45" colspan="2"><img src="img/icon_prevschool.gif" />  </td>
+    </tr>
+  <tr>
+    <td width="27%" height="34">Name of school </td>
+    <td width="73%" height="34"><input name="school_name" type="text" id="school_name" style="width:320px;" /></td>
+  </tr>
+  <tr>
+    <td height="34">Country / City </td>
+    <td height="34"><input name="school_country" type="text" id="school_country" style="width:320px;" /></td>
+  </tr>
+  <tr>
+    <td height="34">Periode of study </td>
+    <td height="34"><input name="school_periode" type="text" id="school_periode" style="width:320px;" /></td>
+  </tr>
+  <tr>
+    <td height="34">Curriculum</td>
+    <td height="34"><input name="school_curriculum" type="text" id="school_curriculum" style="width:320px;" /></td>
+  </tr>
+  <tr>
+    <td height="34">Language  of Instruction</td>
+    <td height="34"><input name="school_language" type="text" id="school_language" style="width:320px;" /></td>
+  </tr>
+  <tr>
+    <td height="33" colspan="2" valign="bottom">Highest  level of study/certificate awarded</td>
+    </tr>
+  <tr>
+    <td colspan="2"><textarea name="school_cert" rows="2" id="school_cert" style="width:490px;">
+</textarea></td>
+    </tr>
+  <tr>
+    <td height="32" colspan="2">Past school releas form </td>
+  </tr>
+  <tr>
+    <td height="32" colspan="2"><textarea name="school_releaseform" rows="6" style="width:490px;"></textarea></td>
+  </tr>
+  <tr>
+    <td height="63" colspan="2"><label>
+      <input name="stud_id" type="hidden" id="stud_id" value="{STUDID}" />
+      <input name="addschool" type="submit" id="addschool" value="Add this school" />
+    </label></td>
+  </tr>
+</table>
+</form>
+</div>
+<form name="myForm" method="post" action="" id="basic_form" Enctype="multipart/form-data">
+<br /><br>
+  <table width="100%" border="0" cellspacing="1" cellpadding="4" align="center">
+    <tr bgcolor="#FAFAFA"> 
+      <td height="26">Has  the student ever <strong>skipped a grade/been promoted?</strong> (leave blank if not) </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="80" valign="top">
+      <textarea name="skippedgrade" rows="2" id="skippedgrade" style="width:500px;">{SKIPPEDGRADE}</textarea>      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="25">Has  the student ever <strong>repeated a grade?</strong> (leave blank if not) </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="80" valign="top">
+      <textarea name="repeatedgrade" rows="2" id="repeatedgrade" style="width:500px;">{REPEATEDGRADE}</textarea>      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="25">Has  the student been <strong>suspended or expelled</strong> from any previous schools?&nbsp;&nbsp; </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="80" valign="top">
+      <textarea name="suspended" rows="2" id="suspended" style="width:500px;">{SUSPENDED}</textarea>      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="25">Has  the student <strong>exhibited behavior problems</strong> at home or in a school setting? </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="80" valign="top">
+      <textarea name="behaviorproblems" rows="2" id="behaviorproblems" style="width:500px;">{BEHAVIORPROBLEMS}</textarea>      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="25">Has  the student <strong>participated in behavioral management</strong>, counseling, or family  therapy?&nbsp; </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="80" valign="top">
+      <textarea name="behaviormanagement" rows="2" id="behaviormanagement" style="width:500px;">{BEHAVIORMANAGEMENT}</textarea>      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="25"><p>Has the  student ever had any<strong> individualized testing such as SAP, intelligence test,  TOEFL</strong> etc? If yes, p-lease specify and  enclose test results</p>      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="80" valign="top">
+      <textarea name="indi_testing" rows="2" id="indi_testing" style="width:500px;">{INDITESTING}</textarea>      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34"><p>Please  provide for the above or any other factors that the school should be aware of  that might affect the success of your child&hellip; </p></td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34">
+        <textarea name="background_others" rows="2" id="background_others" style="width:500px;">{BACKGROUNDOTHERS}</textarea>      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="30">	  
+	  <input name="stud_id" type="hidden" id="stud_id" value="{STUDID}" />
+      <input name="submit" type="submit" id="submit" value="submit" /></td>
+    </tr>
+  </table>
+</form>

@@ -1,0 +1,45 @@
+<style type="text/css">
+<!--
+.style1 {font-size: 10px}
+-->
+</style>
+<form name="myForm" method="post" action="" id="basic_form" Enctype="multipart/form-data">
+  <div class="SectionHeader">
+     <h1><img src="img/txt_parentsaccounts.gif" width="300" height="60" /> </h1>
+</div><br />
+  <table width="98%" border="0" cellspacing="1" cellpadding="4">
+    <tr> 
+      <td width="31%" height="34">Username</td>
+      <td width="69%" height="34">{ACCUID}</td>
+    </tr>
+    <tr>
+      <td height="34">Password</td>
+      <td height="34"><input name="acc_pwd" type="text" id="bus_name2" value="{ACCPWD}" style="width:340px;" /></td>
+    </tr>
+    <tr> 
+      <td height="34">E-Mail Address </td>
+      <td height="34"><input name="acc_email" type="text" id="bus_name22" value="{ACCEMAIL}" style="width:340px;" /></td>
+    </tr>
+    <tr>
+      <td height="34">Newsletter status </td>
+      <td height="34">{NEWSLETTERSTATUS}</td>
+    </tr>
+    <tr>
+      <td height="30" bgcolor="#F5F5F5">Attach Student</td>
+      <td height="30" bgcolor="#F5F5F5"><input name="acc_attachnewstudent" type="text" value="{ACCATTACHSTUDENT}" id="acc_email" style="width:340px;" /></td>
+    </tr>
+    <tr>
+      <td height="81" colspan="2" bgcolor="#F5F5F5"><span class="style1">Input the student number here (e.g. 06-85773). <br />
+        This field can be empty (this would create an parents account without any students attached ) <br /> 
+        Only active students can be attached. <br />
+        Separate student number with a comma to attach multiple students (e.g. 06-85773</span>,<span class="style1">06-442332) </span></td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td width="31%" bgcolor="#FFFFFF">&nbsp;</td>
+     <td>
+	 <input name="acc_uid" type="hidden" id="acc_uid" value="{ACCUID}" />	  
+	  <input name="account_id" type="hidden" id="account_id" value="{ACCOUNTID}" />
+      <input name="submit" type="submit" id="submit" value="submit" /></td>
+    </tr>
+  </table>
+</form>

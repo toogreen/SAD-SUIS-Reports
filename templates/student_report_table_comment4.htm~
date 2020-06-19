@@ -1,0 +1,33 @@
+<font size="{FONTSIZE}" face="{FONTFACE}">
+<b>Additional comments 附加评语</b>
+<hr size =1>
+{COMMENT1}
+<hr size =1>
+
+<b>Chinese Literacy 中文 </b>
+<hr size =1>
+{COMMENT2}
+<hr size =1>
+
+<b>English Literacy 英文 </b>
+<hr size =1>
+{COMMENT3}
+<hr size =1>
+
+<b>Maths and Numeracy 数学</b>
+<hr size =1>
+{COMMENT4}
+<hr size =1>
+
+<b>Other Subjects 其他学科 </b>
+<hr size =1>
+{COMMENT5}
+<hr size =1>
+
+<b>{TEXT_COMMENT_VARIABLE}</b>
+<hr size =1>
+{COMMENT6}
+<hr size =1>
+
+
+</FONT>

@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" /><title>SUIS Student Database - Student profile: {LASTNAME} {FIRSTNAME} {CHINESENAME}</title>
+
+<style type="text/css">
+<!--
+body,td,th {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 12px;
+}
+h1 {
+font-size: 16px;
+}
+h2 {
+font-size: 14px;
+}
+-->
+</style></head>
+<body>
+<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="width: 40%; vertical-align: top;">
+<h1>Student's details</h1>
+<br />
+<b>Student ID number</b>: {STUDNB}<br />
+<br />
+<b>Family name english:</b> {LASTNAME}<br />
+<br />
+<b>First / middle name: </b>{FIRSTNAME} {MIDDLENAME}<br />
+<br />
+<b>Name Chinese</b>: {CHINESENAME}<br />
+<br />
+<b>Classroom: </b>{CLASSNAME}<br />
+<br />
+<b>HR Teachers: </b>{CLASSHT}<br />
+<br />
+<b>Date of Birth: </b>{DOBDROP}<br />
+<br />
+<b>Date enrolled: </b>{ENROLLED}<br />
+<br />
+<b>Gender: </b>{SEXDROP}<br />
+<br />
+<b>Nationality: </b>{NATIONALITY}<br />
+<br />
+<h1>Emergency Contact</h1>
+<span style="font-weight: bold;">Contact person 1: </span>{EMGCCONTACT}
+<br />
+<span style="font-weight: bold;">Phone:</span>
+{EMGCPHONE}<span style="font-weight: bold;">
+&nbsp;Mobile:</span> {EMGCMOBILE}<br />
+<br />
+<span style="font-weight: bold;">Contact person
+2:&nbsp;&nbsp;</span>{EMGC2CONTACT}<br />
+<span style="font-weight: bold;">Phone: </span>{EMGC2PHONE}
+&nbsp;<span style="font-weight: bold;">Mobile: </span>{EMGC2MOBILE}<br />
+<!-- {DISEASES} -->
+<br />
+<b>Medical Conditions:</b>  {PHYSICALACTIVITY}<br />
+<br />
+<b>Medicine to take:</b> {MEDICINE}<br />
+<br />
+<b>Bus number:</b> {BUSOUT}<br /></td>
+<td style="vertical-align: top;">
+<h1>Parents' details</h1>
+<h2>Father</h2>
+<b>Name: </b>{FATHERNAME}<br />
+<b>Phone</b>: {FATHERPHONE}<br />
+<b>Mobile Phone</b>: {FATHERPHONEMOBILE}<br />
+<b>Email: </b>{FATHEREMAIL}<br />
+<br />
+<b>Phone: </b>{FATHERPHONE}<br />
+<b>Home Address: </b>{FATHERHOMEADDRESS}<br />
+<br />
+<h2>Mother</h2>
+<b>Name: </b>{MOTHERNAME}<br />
+<b>Phone</b>: {MOTHERPHONE}<br />
+<b>Mobile Phone:</b> {MOTHERPHONEMOBILE}<br />
+<b>Email:</b> {MOTHEREMAIL}<br />
+<b>Home Address:</b> {FATHERHOMEADDRESS}<br>
+<br>
+<b>After-school carer:</b> {CARER}
+<br /><br />
+<b>English language level:</b> {LANGENGLISHLEVEL}<br />
+<br />
+<b>Chinese language level:</b> {LANGCHINESELEVEL}<br />
+<br />
+<b>Maths:</b> {LANGMATHSLEVEL}<br />
+<br />
+<b>Special Educational Needs:</b> {LANGSPECIALNEEDS}<br />
+<br />
+<b>EAL (EFL, CAL, CFL?):</b> {LANGEAL}<br />
+<br />
+<b>Oxford Reading Tree level:</b> {LANGORTLEVEL}<br />
+<br />
+<!-- UNCOMMENT TO SHOW ALL COMMENTS EVER INPUT <b>Comments:</b> {DETENTIONS}<br /> -->
+<b>Comments:</b> {PARENTSOTHERS}
+
+</td>
+</tr>
+</tbody>
+</table>
+<b><br />
+<br />
+</b><br />
+
+</body></html> <STYLE TYPE='text/css'>P.breakhere {page-break-before: always}</STYLE>

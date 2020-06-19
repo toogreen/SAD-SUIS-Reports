@@ -1,0 +1,54 @@
+<div class="SectionHeader">
+     <img src="img/icon_medical.gif" /><a href="javascript:toggleLayer('student-med');" title="Show Medical information"><img src="img/icon_showhide.gif" width="160" height="60" border="0" /></a><a href="student-med.php?stud_id={STUDID}"><img src="img/icon_edit.gif" width="61" height="60" border="0" /></a>
+</div>
+  <br />
+ <div id="student-med">
+  <table width="100%" border="0" cellspacing="1" cellpadding="4" align="center">
+    
+    <tr bgcolor="#FAFAFA"> 
+      <td width="31%" height="34" valign="top">Has received  the following childhood immunizations</td>
+      <td width="69%" height="34">{IMMUNIZATIONS}&nbsp;
+        
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" valign="top">Has any of the following</td>
+      <td height="34">{DISEASES}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34" colspan="2">Take any medicines regularly</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" colspan="2">
+        <textarea name="medicine" rows="4" id="medicine" style="width:560px;">{MEDICINE}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34">Contact lenses / glasses </td>
+      <td height="34">{CONTACTLENSES}</td>
+    </tr>
+    <tr bgcolor="#FAFAFA"> 
+      <td height="34" colspan="2">Limitations on physical activity or other medical conditions</td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" colspan="2">
+        <textarea name="physicalactivity" rows="4" id="physicalactivity" style="width:560px;">{PHYSICALACTIVITY}</textarea>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAFA">
+      <td height="34" valign="top"><p align="left">Has been tested <br />
+        or recommended  for </p></td>
+      <td height="34">{MEDICALOTHERS}</td>
+    </tr>
+    
+    <tr bgcolor="#FAFAFA">
+      <td height="30">&nbsp;</td>
+      <td height="30">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td width="31%" bgcolor="#FFFFFF">?
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+ </div>
